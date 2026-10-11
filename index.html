@@ -1,12 +1,530 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabian Camayo</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fabian Camayo — Desarrollador Fullstack independiente</title>
+<meta name="description" content="Desarrollador de software independiente con más de 5 años de experiencia en Java, Spring Boot, arquitectura de microservicios y Clean Architecture. Aplicaciones propias como Note Plus." />
+<meta name="theme-color" content="#0b0f19" />
+<meta name="color-scheme" content="dark" />
+<link rel="canonical" href="https://fabian-camayo.github.io/" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Fabian Camayo — Desarrollador Fullstack independiente" />
+<meta property="og:description" content="Buen software, arquitectura clara. Apps propias como Note Plus." />
+<meta property="og:url" content="https://fabian-camayo.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-    
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<div class="bg" aria-hidden="true">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+  <div class="grid-lines"></div>
+</div>
+
+<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">FC</span>
+      <span class="brand-text">
+        <strong>Fabian Camayo</strong>
+        <small>Desarrollador independiente</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="nav-menu" aria-label="Principal">
+      <a href="#perfil">Perfil</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
+      <a href="#apps">Apps</a>
+      <a class="nav-cta" href="#google-play">Google Play</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ─────────────────────────── Hero ─────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-inner">
+      <p class="pill reveal">
+        <span class="dot" aria-hidden="true"></span>
+        Disponible para nuevos proyectos
+      </p>
+
+      <h1 class="reveal">
+        Construyo software
+        <span class="gradient-text">claro, mantenible y bien arquitecturado</span>
+      </h1>
+
+      <p class="hero-lead reveal">
+        Soy <strong>desarrollador fullstack independiente</strong> con más de 5 años de experiencia
+        diseñando e integrando servicios distribuidos, aplicando Clean Architecture y principios SOLID.
+        También creo mis propias aplicaciones para Android.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#apps">Ver mis aplicaciones</a>
+        <a class="btn btn-ghost" href="#habilidades">Conocer mis habilidades</a>
+      </div>
+
+      <dl class="stats reveal">
+        <div>
+          <dt>Experiencia</dt>
+          <dd><span data-count="5">0</span>+ años</dd>
+        </div>
+        <div>
+          <dt>Enfoque</dt>
+          <dd>Fullstack</dd>
+        </div>
+        <div>
+          <dt>Especialidad</dt>
+          <dd>Microservicios</dd>
+        </div>
+        <div>
+          <dt>Modalidad</dt>
+          <dd>Remoto</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Perfil ─────────────────────────── -->
+  <section class="section" id="perfil">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Perfil</span>
+        <h2>Desarrollador independiente</h2>
+        <p>
+          Trabajo por mi cuenta, en remoto y en equipos distribuidos. Me muevo cómodo donde la
+          calidad del software y la arquitectura son un pilar, no un extra.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">◆</span>
+          <h3>Arquitectura primero</h3>
+          <p>Clean Architecture, separación de responsabilidades y dependencias que apuntan hacia el dominio.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">◇</span>
+          <h3>Servicios distribuidos</h3>
+          <p>Diseño e integración de microservicios, con foco en escalabilidad y mantenibilidad.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">▣</span>
+          <h3>Fullstack de verdad</h3>
+          <p>Del modelo de datos y la API al frontend y la experiencia de uso final.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true">✦</span>
+          <h3>Equipos remotos</h3>
+          <p>Colaboración sostenida en el tiempo con equipos de distintos países y zonas horarias.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Habilidades ─────────────────────────── -->
+  <section class="section" id="habilidades">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Habilidades</span>
+        <h2>Con lo que trabajo</h2>
+        <p>Un mapa honesto de mi nivel, sin adornos.</p>
+      </div>
+
+      <div class="skills-layout">
+        <div class="card skills-card reveal">
+          <ul class="skills" data-skills>
+            <li>
+              <div class="skill-top"><span>Java &amp; Spring Boot</span><em>80%</em></div>
+              <div class="bar"><span style="--value:80%"></span></div>
+            </li>
+            <li>
+              <div class="skill-top"><span>Angular &amp; JavaScript</span><em>80%</em></div>
+              <div class="bar"><span style="--value:80%"></span></div>
+            </li>
+            <li>
+              <div class="skill-top"><span>SQL &amp; MySQL</span><em>80%</em></div>
+              <div class="bar"><span style="--value:80%"></span></div>
+            </li>
+            <li>
+              <div class="skill-top"><span>JHipster</span><em>60%</em></div>
+              <div class="bar"><span style="--value:60%"></span></div>
+            </li>
+            <li>
+              <div class="skill-top"><span>Microservicios</span><em>60%</em></div>
+              <div class="bar"><span style="--value:60%"></span></div>
+            </li>
+            <li>
+              <div class="skill-top"><span>Python</span><em>60%</em></div>
+              <div class="bar"><span style="--value:60%"></span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-side">
+          <div class="card reveal">
+            <h3>Otras competencias</h3>
+            <ul class="tags">
+              <li>Clean Architecture</li>
+              <li>Principios SOLID</li>
+              <li>Git &amp; GitHub</li>
+              <li>Arquitectura de microservicios</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Idiomas</h3>
+            <ul class="langs">
+              <li><span>Español</span><em>Nativo</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Experiencia ─────────────────────────── -->
+  <section class="section" id="experiencia">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Trayectoria</span>
+        <h2>Experiencia</h2>
+        <p>Empresas con las que he trabajado.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="card tl-card">
+            <div class="tl-top">
+              <h3>JITKey S.L.</h3>
+              <span class="chip chip-live">Actual</span>
+            </div>
+            <p class="tl-role">Desarrollador informático · Fullstack</p>
+            <p class="tl-meta">Julio 2022 — Actualidad · Remoto</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="card tl-card">
+            <div class="tl-top">
+              <h3>Knowark S.A.S</h3>
+            </div>
+            <p class="tl-role">Desarrollador web</p>
+            <p class="tl-meta">Mayo 2021 — Enero 2022</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="card tl-card">
+            <div class="tl-top">
+              <h3>SADMIN S.A.S</h3>
+            </div>
+            <p class="tl-role">Soporte y desarrollo</p>
+            <p class="tl-meta">Septiembre 2019 — Marzo 2020</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <div class="card tl-card">
+            <div class="tl-top">
+              <h3>SERATIC Ltda.</h3>
+            </div>
+            <p class="tl-role">Soporte y desarrollo</p>
+            <p class="tl-meta">Noviembre 2018 — Junio 2019</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Formación ─────────────────────────── -->
+  <section class="section" id="formacion">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Formación</span>
+        <h2>Educación y certificaciones</h2>
+      </div>
+
+      <div class="two-col">
+        <div class="col">
+          <h3 class="col-title reveal">Educación</h3>
+          <ul class="list">
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Especialización en Ingeniería de Software</h4>
+                <p>Institución Universitaria ITM · 2026 — 2027</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Ingeniería Informática</h4>
+                <p>Institución Universitaria Colegio Mayor del Cauca · 2020 — 2024</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Tecnología en Análisis y Desarrollo de Sistemas de Información</h4>
+                <p>SENA · 2017 — 2019</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h3 class="col-title reveal">Certificaciones</h3>
+          <ul class="list">
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Bootcamp de Inteligencia Artificial — Nivel Intermedio</h4>
+                <p>Platzi</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Curso Profesional de Git y GitHub</h4>
+                <p>Platzi</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Fundamentos de Ingeniería de Software</h4>
+                <p>Platzi</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <div class="card mini">
+                <h4>Curso de Programación Básica</h4>
+                <p>Platzi</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Apps ─────────────────────────── -->
+  <section class="section" id="apps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Apps</span>
+        <h2>Mis aplicaciones</h2>
+        <p>Aplicaciones propias, hechas de principio a fin.</p>
+      </div>
+
+      <article class="card app-card reveal">
+        <div class="app-top">
+          <div class="app-icon" aria-hidden="true">
+            <svg viewBox="0 0 108 108" role="img" aria-label="Icono de Note Plus">
+              <rect x="8" y="8" width="92" height="92" rx="22" fill="#FFEB3B" />
+              <rect x="30" y="36" width="48" height="7" rx="3.5" fill="#141414" />
+              <rect x="30" y="52" width="48" height="7" rx="3.5" fill="#141414" />
+              <rect x="30" y="68" width="30" height="7" rx="3.5" fill="#141414" />
+            </svg>
+          </div>
+
+          <div class="app-info">
+            <div class="app-name-row">
+              <h3>Note Plus</h3>
+              <span class="chip">Android</span>
+              <span class="chip chip-soon">En preparación para Google Play</span>
+            </div>
+            <p class="app-desc">
+              Notas personales que viven en el teléfono. Texto, imágenes, vídeos y audios, con
+              categorías y colores propios. Cada nota puede colocarse como widget en la pantalla de
+              inicio para leerla y corregirla sin abrir la app.
+            </p>
+            <ul class="tags">
+              <li>Java 17</li>
+              <li>Material 3</li>
+              <li>Room</li>
+              <li>Widgets</li>
+              <li>Arquitectura hexagonal</li>
+              <li>Sin red</li>
+            </ul>
+            <div class="app-actions">
+              <a class="btn btn-primary btn-sm" href="#google-play">Checklist de publicación</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/fabian-camayo/notesphone" target="_blank" rel="noopener">Ver código</a>
+            </div>
+          </div>
+        </div>
+
+        <ul class="app-facts">
+          <li><strong>Android 13+</strong> · objetivo Android 16</li>
+          <li><strong>Privacidad</strong> · sin cuenta, sin internet, sin anuncios</li>
+          <li><strong>Datos</strong> · todo en el almacenamiento privado del teléfono</li>
+          <li><strong>Idiomas</strong> · español e inglés</li>
+        </ul>
+      </article>
+
+      <p class="apps-next reveal">
+        <span class="chip chip-dashed">Próximamente</span>
+        La siguiente aplicación se anunciará aquí.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Google Play ─────────────────────────── -->
+  <section class="section" id="google-play">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Publicación</span>
+        <h2>Qué necesita una app para Google Play</h2>
+        <p>
+          El recorrido real desde el código hasta la tienda, agrupado en cuatro bloques.
+          Toca cada bloque para ver el detalle.
+        </p>
+      </div>
+
+      <div class="accordion" id="accordion">
+        <details class="acc reveal" open>
+          <summary>
+            <span class="acc-num" aria-hidden="true">01</span>
+            <span class="acc-title">Binario y firma</span>
+            <span class="acc-hint">2 pasos</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="checklist">
+              <li>
+                <span class="state done">Base</span>
+                Generar un <strong>Android App Bundle (.aab)</strong>, no un APK. Play no acepta APK en apps nuevas.
+              </li>
+              <li>
+                <span class="state pending">Pendiente</span>
+                Crear el <strong>keystore</strong>, firmar el release y activar <strong>Play App Signing</strong>. Si se pierde la clave, no hay más actualizaciones.
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="acc reveal">
+          <summary>
+            <span class="acc-num" aria-hidden="true">02</span>
+            <span class="acc-title">Cumplimiento y privacidad</span>
+            <span class="acc-hint">4 pasos</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="checklist">
+              <li>
+                <span class="state done">Hecho</span>
+                <strong>targetSdk 36</strong> (Android 16) y <strong>minSdk 33</strong>. Obligatorio para apps nuevas desde el 31 de agosto de 2026.
+              </li>
+              <li>
+                <span class="state done">Hecho</span>
+                Manifiesto sin permisos sensibles: <strong>sin internet</strong>, sin cámara, sin micrófono, sin almacenamiento compartido.
+              </li>
+              <li>
+                <span class="state pending">Pendiente</span>
+                <strong>Política de privacidad</strong> en una URL pública y estática (no un PDF, sin inicio de sesión).
+              </li>
+              <li>
+                <span class="state pending">Pendiente</span>
+                <strong>Formulario de seguridad de datos</strong>: declarar que no se recogen ni comparten datos, y que los medios se copian solo al almacenamiento privado.
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="acc reveal">
+          <summary>
+            <span class="acc-num" aria-hidden="true">03</span>
+            <span class="acc-title">Ficha en la tienda</span>
+            <span class="acc-hint">5 pasos</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="checklist">
+              <li><span class="state pending">Pendiente</span> Icono de tienda <strong>512 × 512</strong> en PNG.</li>
+              <li><span class="state pending">Pendiente</span> Gráfico de función <strong>1024 × 500</strong>.</li>
+              <li><span class="state pending">Pendiente</span> Capturas de teléfono (mínimo 2, mejor entre 4 y 8), en español e inglés.</li>
+              <li><span class="state pending">Pendiente</span> Nombre, descripción corta y descripción larga, más categoría y datos de soporte.</li>
+              <li><span class="state pending">Pendiente</span> Clasificación de contenido (IARC) y declaración del público objetivo.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="acc reveal">
+          <summary>
+            <span class="acc-num" aria-hidden="true">04</span>
+            <span class="acc-title">Pruebas y publicación</span>
+            <span class="acc-hint">3 pasos</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="checklist">
+              <li>
+                <span class="state pending">Pendiente</span>
+                <strong>Cuenta de desarrollador</strong> con verificación de identidad. En cuentas personales nuevas, prueba cerrada con <strong>12 testers durante 14 días</strong> antes de producción.
+              </li>
+              <li>
+                <span class="state pending">Pendiente</span>
+                Probar en un dispositivo real con <strong>API 33</strong> y otro con <strong>API 36</strong> antes de subir.
+              </li>
+              <li>
+                <span class="state pending">Pendiente</span>
+                Subir el bundle firmado y pasar de la prueba cerrada a producción. Cada actualización sube el <strong>versionCode</strong>.
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <p class="note reveal">
+        Nota: publicar requiere trabajo fuera del código — cuenta, ficha, página de privacidad y
+        capturas. El resto ya vive en el proyecto.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────── Cierre ─────────────────────────── -->
+  <section class="section cta-section" id="contacto">
+    <div class="wrap">
+      <div class="cta card reveal">
+        <h2>Siempre abierto a buenos proyectos</h2>
+        <p>
+          Trabajo como desarrollador independiente en remoto. Si te encaja cómo construyo software,
+          hablemos de tu idea.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#apps">Ver mis aplicaciones</a>
+          <a class="btn btn-ghost" href="#perfil">Sobre mi forma de trabajar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year"></span> Fabian Camayo · Desarrollador independiente</p>
+    <ul class="footer-links">
+      <li><a href="https://github.com/fabian-camayo" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#google-play">Publicación en Google Play</a></li>
+      <li><a href="#inicio">Volver arriba</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
