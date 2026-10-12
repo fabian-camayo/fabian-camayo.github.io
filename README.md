@@ -53,6 +53,14 @@ inserta como `<iframe>` con `data-tally-src` y `https://tally.so/widgets/embed.j
 - Debajo hay un enlace directo al formulario, por si el embed no se muestra (JavaScript
   desactivado, bloqueadores o fallo de red).
 
+Sobre el aspecto: el formulario se sirve con **tema claro** y Tally no permite elegir tema por
+parámetro; además, el script de Tally fuerza `color-scheme: light` en el iframe cuando el fondo
+es transparente. Por eso el embed va con `transparentBackground=1` y **el fondo lo pone la web**:
+`.contact-embed` es un panel claro con el degradado y los acentos violeta/cian del sitio. Así el
+formulario se lee bien y encaja con el diseño oscuro, en vez de aparecer como una caja blanca
+suelta. Si algún día se quiere oscurecer, hay que cambiarlo en el diseño del formulario en
+Tally: entonces Tally pasará a usar texto claro y el panel podría hacerse oscuro.
+
 Para cambiar el formulario, basta con editar el de Tally: el sitio solo apunta a su ID
 (`vG7EXA`). Si algún día el formulario tiene otro ID, hay que actualizar las dos apariciones en
 `index.html` (el `data-tally-src` y el enlace de respaldo).

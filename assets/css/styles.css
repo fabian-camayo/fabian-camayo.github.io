@@ -630,14 +630,40 @@ button { font: inherit; color: inherit; }
 .contact-head h3 { font-size: clamp(1.25rem, 2.6vw, 1.6rem); }
 .contact-head p { margin-top: 12px; color: var(--muted); font-size: 0.97rem; }
 
+/* El formulario lo sirve Tally con tema claro, y su iframe fuerza
+   color-scheme: light cuando el fondo es transparente. En vez de pelear con
+   su tema, le damos un soporte propio: un panel claro con los acentos de la
+   web, para que el formulario se vea intencionado y no como una caja suelta. */
 .contact-embed {
+  position: relative;
   margin-top: 28px;
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-sm);
-  background: #ffffff;
+  padding: clamp(14px, 2.4vw, 26px);
+  border-radius: var(--radius);
+  border: 1px solid rgba(139, 92, 246, 0.32);
+  background:
+    radial-gradient(520px 180px at 8% 0%, rgba(139, 92, 246, 0.13), transparent 68%),
+    radial-gradient(520px 200px at 100% 100%, rgba(34, 211, 238, 0.13), transparent 70%),
+    linear-gradient(165deg, #ffffff 0%, #f3f5ff 100%);
+  box-shadow:
+    0 34px 70px -42px rgba(139, 92, 246, 0.9),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
   overflow: hidden;
 }
-.contact-embed iframe { display: block; width: 100%; border: 0; }
+.contact-embed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--grad);
+}
+.contact-embed iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
 
 .contact-alt {
   margin-top: 16px;
