@@ -53,7 +53,7 @@
       <a href="#experiencia">Experiencia</a>
       <a href="#formacion">Formación</a>
       <a href="#apps">Apps</a>
-      <a class="nav-cta" href="#google-play">Google Play</a>
+      <a class="nav-cta" href="#documentos">Documentos</a>
     </nav>
   </div>
 </header>
@@ -370,7 +370,7 @@
                 </svg>
                 Ver en Google Play
               </a>
-              <a class="btn btn-ghost btn-sm" href="#google-play">Checklist de publicación</a>
+              <a class="btn btn-ghost btn-sm" href="#documentos">Documentos legales</a>
             </div>
           </div>
         </div>
@@ -381,6 +381,16 @@
           <li><strong>Datos</strong> · todo en el almacenamiento privado del teléfono</li>
           <li><strong>Idiomas</strong> · español e inglés</li>
         </ul>
+
+        <div class="app-legal">
+          <span class="app-legal-title">Documentos</span>
+          <ul>
+            <li><a href="note-plus/privacidad/">Política de privacidad</a></li>
+            <li><a href="note-plus/terminos/">Términos y condiciones</a></li>
+            <li><a href="note-plus/seguridad-de-datos/">Seguridad de los datos</a></li>
+            <li><a href="note-plus/soporte/">Soporte</a></li>
+          </ul>
+        </div>
       </article>
 
       <p class="apps-next reveal">
@@ -390,113 +400,68 @@
     </div>
   </section>
 
-  <!-- ─────────────────────────── Google Play ─────────────────────────── -->
-  <section class="section" id="google-play">
+  <!-- ─────────────────────── Documentos legales ─────────────────────── -->
+  <section class="section" id="documentos">
     <div class="wrap">
       <div class="section-head reveal">
-        <span class="eyebrow">Publicación</span>
-        <h2>Qué necesita una app para Google Play</h2>
+        <span class="eyebrow">Documentos de Note Plus</span>
+        <h2>Privacidad, términos y acuerdos</h2>
         <p>
-          El recorrido real desde el código hasta la tienda, agrupado en cuatro bloques.
-          Toca cada bloque para ver el detalle.
+          Los documentos que acompañan a la app y que Google Play pide o recomienda tener
+          publicados en una dirección abierta, sin inicio de sesión y sin descargas.
         </p>
       </div>
 
-      <div class="accordion" id="accordion">
-        <details class="acc reveal" open>
-          <summary>
-            <span class="acc-num" aria-hidden="true">01</span>
-            <span class="acc-title">Binario y firma</span>
-            <span class="acc-hint">2 pasos</span>
-          </summary>
-          <div class="acc-body">
-            <ul class="checklist">
-              <li>
-                <span class="state done">Base</span>
-                Generar un <strong>Android App Bundle (.aab)</strong>, no un APK. Play no acepta APK en apps nuevas.
-              </li>
-              <li>
-                <span class="state pending">Pendiente</span>
-                Crear el <strong>keystore</strong>, firmar el release y activar <strong>Play App Signing</strong>. Si se pierde la clave, no hay más actualizaciones.
-              </li>
-            </ul>
-          </div>
-        </details>
+      <div class="docs-grid">
+        <a class="card doc-card reveal" href="note-plus/privacidad/">
+          <span class="doc-tag doc-tag-req">Obligatorio</span>
+          <h3>Política de privacidad</h3>
+          <p>
+            Qué datos usa la app, dónde se guardan y qué no se recoge. Es la dirección que se
+            declara en la ficha de Google Play.
+          </p>
+          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
+        </a>
 
-        <details class="acc reveal">
-          <summary>
-            <span class="acc-num" aria-hidden="true">02</span>
-            <span class="acc-title">Cumplimiento y privacidad</span>
-            <span class="acc-hint">4 pasos</span>
-          </summary>
-          <div class="acc-body">
-            <ul class="checklist">
-              <li>
-                <span class="state done">Hecho</span>
-                <strong>targetSdk 36</strong> (Android 16) y <strong>minSdk 33</strong>. Obligatorio para apps nuevas desde el 31 de agosto de 2026.
-              </li>
-              <li>
-                <span class="state done">Hecho</span>
-                Manifiesto sin permisos sensibles: <strong>sin internet</strong>, sin cámara, sin micrófono, sin almacenamiento compartido.
-              </li>
-              <li>
-                <span class="state pending">Pendiente</span>
-                <strong>Política de privacidad</strong> en una URL pública y estática (no un PDF, sin inicio de sesión).
-              </li>
-              <li>
-                <span class="state pending">Pendiente</span>
-                <strong>Formulario de seguridad de datos</strong>: declarar que no se recogen ni comparten datos, y que los medios se copian solo al almacenamiento privado.
-              </li>
-            </ul>
-          </div>
-        </details>
+        <a class="card doc-card reveal" href="note-plus/seguridad-de-datos/">
+          <span class="doc-tag doc-tag-req">Obligatorio</span>
+          <h3>Seguridad de los datos</h3>
+          <p>
+            Las respuestas del formulario de seguridad de datos de Play, explicadas una a una y
+            comprobables en la app.
+          </p>
+          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
+        </a>
 
-        <details class="acc reveal">
-          <summary>
-            <span class="acc-num" aria-hidden="true">03</span>
-            <span class="acc-title">Ficha en la tienda</span>
-            <span class="acc-hint">5 pasos</span>
-          </summary>
-          <div class="acc-body">
-            <ul class="checklist">
-              <li><span class="state pending">Pendiente</span> Icono de tienda <strong>512 × 512</strong> en PNG.</li>
-              <li><span class="state pending">Pendiente</span> Gráfico de función <strong>1024 × 500</strong>.</li>
-              <li><span class="state pending">Pendiente</span> Capturas de teléfono (mínimo 2, mejor entre 4 y 8), en español e inglés.</li>
-              <li><span class="state pending">Pendiente</span> Nombre, descripción corta y descripción larga, más categoría y datos de soporte.</li>
-              <li><span class="state pending">Pendiente</span> Clasificación de contenido (IARC) y declaración del público objetivo.</li>
-            </ul>
-          </div>
-        </details>
+        <a class="card doc-card reveal" href="note-plus/terminos/">
+          <span class="doc-tag">Acuerdo</span>
+          <h3>Términos y condiciones</h3>
+          <p>
+            Licencia de uso, qué puedes esperar de la app, límites de responsabilidad y ley
+            aplicable.
+          </p>
+          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
+        </a>
 
-        <details class="acc reveal">
-          <summary>
-            <span class="acc-num" aria-hidden="true">04</span>
-            <span class="acc-title">Pruebas y publicación</span>
-            <span class="acc-hint">3 pasos</span>
-          </summary>
-          <div class="acc-body">
-            <ul class="checklist">
-              <li>
-                <span class="state pending">Pendiente</span>
-                <strong>Cuenta de desarrollador</strong> con verificación de identidad. En cuentas personales nuevas, prueba cerrada con <strong>12 testers durante 14 días</strong> antes de producción.
-              </li>
-              <li>
-                <span class="state pending">Pendiente</span>
-                Probar en un dispositivo real con <strong>API 33</strong> y otro con <strong>API 36</strong> antes de subir.
-              </li>
-              <li>
-                <span class="state pending">Pendiente</span>
-                Subir el bundle firmado y pasar de la prueba cerrada a producción. Cada actualización sube el <strong>versionCode</strong>.
-              </li>
-            </ul>
-          </div>
-        </details>
+        <a class="card doc-card reveal" href="note-plus/soporte/">
+          <span class="doc-tag">Ficha de Play</span>
+          <h3>Soporte</h3>
+          <p>
+            Cómo reportar un problema, qué información conviene incluir y preguntas frecuentes.
+          </p>
+          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
+        </a>
       </div>
 
-      <p class="note reveal">
-        Nota: publicar requiere trabajo fuera del código — cuenta, ficha, página de privacidad y
-        capturas. El resto ya vive en el proyecto.
-      </p>
+      <div class="card docs-note reveal">
+        <h3>Eliminación de datos</h3>
+        <p>
+          Play exige una dirección para eliminar los datos solo cuando la app permite crear una
+          cuenta. Note Plus no tiene cuentas ni servidores, así que los datos se borran desde la
+          propia app al eliminar una nota, o al desinstalarla. Está detallado en la
+          <a href="note-plus/privacidad/#eliminacion">política de privacidad</a>.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -524,7 +489,7 @@
     <p>© <span id="year"></span> Fabian Camayo · Desarrollador independiente</p>
     <ul class="footer-links">
       <li><a href="https://github.com/fabian-camayo" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="#google-play">Publicación en Google Play</a></li>
+      <li><a href="#documentos">Documentos legales</a></li>
       <li><a href="#inicio">Volver arriba</a></li>
     </ul>
   </div>

@@ -9,9 +9,14 @@ Es el repositorio especial de usuario de GitHub Pages: al llamarse
 
 | Archivo | Para qué sirve |
 | --- | --- |
-| `index.html` | Página única con todas las secciones (perfil, habilidades, experiencia, formación, apps y checklist de Google Play). |
-| `assets/css/styles.css` | Todo el diseño. Tema oscuro, glassmorphism, responsive y `prefers-reduced-motion`. |
-| `assets/js/main.js` | Interacciones sin dependencias: menú móvil, revelados, barras de habilidades, contador y acordeón. |
+| `index.html` | Página única con las secciones: perfil, habilidades, experiencia, formación, apps y documentos legales. |
+| `note-plus/privacidad/index.html` | Política de privacidad de Note Plus. Dirección obligatoria para Google Play. |
+| `note-plus/seguridad-de-datos/index.html` | Seguridad de los datos: las respuestas del formulario de Play, explicadas. |
+| `note-plus/terminos/index.html` | Términos y condiciones de uso de Note Plus. |
+| `note-plus/soporte/index.html` | Soporte: cómo reportar un problema y preguntas frecuentes. |
+| `assets/css/styles.css` | Diseño del sitio. Tema oscuro, glassmorphism, responsive y `prefers-reduced-motion`. |
+| `assets/css/legal.css` | Diseño de los documentos legales (índice lateral, prosa, tablas, impresión). |
+| `assets/js/main.js` | Interacciones sin dependencias: menú móvil, revelados, barras de habilidades y contador. |
 | `assets/img/favicon.svg` | Icono del sitio. |
 | `404.html` | Página de error. |
 | `robots.txt`, `sitemap.xml` | Para buscadores. |
@@ -19,10 +24,24 @@ Es el repositorio especial de usuario de GitHub Pages: al llamarse
 
 No hay build, ni `npm install`, ni dependencias. HTML, CSS y JavaScript puros.
 
+## Documentos legales de Note Plus
+
+Google Play exige publicar la política de privacidad en una dirección abierta, estática y sin
+inicio de sesión. Estas son las direcciones para la ficha del Play Console:
+
+- Política de privacidad: `https://fabian-camayo.github.io/note-plus/privacidad/`
+- Seguridad de los datos: `https://fabian-camayo.github.io/note-plus/seguridad-de-datos/`
+- Términos y condiciones: `https://fabian-camayo.github.io/note-plus/terminos/`
+- Soporte: `https://fabian-camayo.github.io/note-plus/soporte/`
+
+La eliminación de datos no necesita una dirección propia: Play solo la pide cuando la app
+permite crear una cuenta, y Note Plus no tiene cuentas. Está explicada dentro de la política
+de privacidad, en el apartado «Eliminación de datos».
+
 ## Ver en local
 
-Como usa rutas relativas, basta con abrir `index.html` en el navegador. Si
-prefieres servirlo:
+Como las páginas internas usan rutas absolutas (`/assets/...`), conviene servirlo en lugar de
+abrir los archivos directamente:
 
 ```bash
 python3 -m http.server 8000
@@ -31,9 +50,8 @@ python3 -m http.server 8000
 
 ## Publicar en GitHub Pages
 
-1. Crea el repositorio en GitHub con el nombre exacto **`fabian-camayo.github.io`**
-   (en una cuenta personal, el repositorio del sitio de usuario debe llamarse así).
-2. Conéctalo y sube el contenido:
+1. El repositorio debe llamarse exactamente **`fabian-camayo.github.io`**.
+2. Sube el contenido:
 
    ```bash
    cd /run/media/devapps/Datos/UBUNTU/PROYECTOS/fabian-camayo.github.io
@@ -47,7 +65,7 @@ python3 -m http.server 8000
 
 ## Nota sobre privacidad
 
-El sitio **no publica datos de contacto personales** (ni correo, ni teléfono,
-ni dirección). Solo muestra habilidades, empresas por nombre, formación y las
-aplicaciones propias. Si algún día quieres añadir un canal de contacto,
-conviene usar un formulario o un correo público, no datos personales.
+El sitio **no publica datos de contacto personales** (ni correo, ni teléfono, ni dirección).
+Solo muestra habilidades, empresas por nombre, formación, las aplicaciones propias y los
+documentos legales. Los documentos remiten al correo de soporte que figure en la ficha de
+Google Play, para no publicar la dirección directamente en el sitio.

@@ -557,89 +557,92 @@ button { font: inherit; color: inherit; }
   font-size: 0.9rem;
 }
 
-/* ── Acordeón (checklist Google Play) ───────────────────────────────────── */
-.accordion { display: grid; gap: 14px; }
-
-.acc {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  overflow: hidden;
-  transition: border-color 0.3s, background 0.3s;
-}
-.acc[open] { border-color: rgba(139, 92, 246, 0.42); background: var(--surface-strong); }
-
-.acc summary {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 20px 24px;
-  cursor: pointer;
-  list-style: none;
-  font-weight: 600;
-}
-.acc summary::-webkit-details-marker { display: none; }
-.acc summary::after {
-  content: "+";
-  margin-left: auto;
-  font-size: 1.35rem;
-  font-weight: 400;
-  color: var(--cyan);
-  transition: transform 0.3s var(--ease);
-}
-.acc[open] summary::after { transform: rotate(45deg); }
-
-.acc-num {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  color: var(--violet);
-  letter-spacing: 0.06em;
-}
-.acc-title { flex: 1; font-size: 1.03rem; }
-.acc-hint { font-family: var(--mono); font-size: 0.72rem; color: var(--dim); }
-
-.acc-body { padding: 0 24px 24px; }
-.acc-body .checklist { animation: fadeIn 0.35s var(--ease); }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
-
-.checklist { display: grid; gap: 14px; }
-.checklist li {
+/* ── Documentos legales ─────────────────────────────────────────────────── */
+.docs-grid {
   display: grid;
-  grid-template-columns: 92px 1fr;
-  gap: 14px;
-  align-items: start;
-  padding: 15px 18px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: rgba(0, 0, 0, 0.18);
-  font-size: 0.92rem;
-  color: var(--muted);
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  gap: 20px;
 }
-.checklist strong { color: var(--text); font-weight: 600; }
 
-.state {
+.doc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.doc-tag {
   display: inline-block;
-  text-align: center;
-  padding: 3px 0;
+  margin-bottom: 14px;
+  padding: 4px 11px;
+  border: 1px solid var(--line-strong);
   border-radius: 100px;
   font-family: var(--mono);
   font-size: 0.68rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  border: 1px solid var(--line-strong);
   color: var(--muted);
 }
-.state.done { border-color: rgba(52, 211, 153, 0.5); color: var(--green); background: rgba(52, 211, 153, 0.1); }
-.state.pending { border-color: rgba(251, 191, 36, 0.45); color: var(--amber); background: rgba(251, 191, 36, 0.08); }
+.doc-tag-req {
+  border-color: rgba(251, 191, 36, 0.5);
+  color: var(--amber);
+  background: rgba(251, 191, 36, 0.08);
+}
 
-.note {
-  margin-top: 26px;
-  font-size: 0.86rem;
+.doc-card h3 { font-size: 1.06rem; }
+.doc-card p { margin-top: 10px; }
+
+.doc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 18px;
+  font-size: 0.87rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+.doc-link span { transition: transform 0.3s var(--ease); }
+.doc-card:hover .doc-link span { transform: translateX(5px); }
+
+.docs-note { margin-top: 20px; }
+.docs-note h3 { font-size: 1.02rem; }
+.docs-note p { margin-top: 10px; max-width: 78ch; }
+.docs-note a {
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Enlaces a los documentos dentro de la tarjeta de una app */
+.app-legal {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.app-legal-title {
+  display: block;
+  margin-bottom: 12px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--dim);
-  border-left: 2px solid var(--line-strong);
-  padding-left: 16px;
+}
+.app-legal ul { display: flex; flex-wrap: wrap; gap: 10px; }
+.app-legal a {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.035);
+  font-size: 0.84rem;
+  color: var(--muted);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+.app-legal a:hover {
+  color: var(--text);
+  border-color: rgba(34, 211, 238, 0.55);
+  background: var(--surface-strong);
 }
 
 /* ── CTA final ──────────────────────────────────────────────────────────── */
@@ -724,17 +727,11 @@ button { font: inherit; color: inherit; }
 
   .app-top { grid-template-columns: 1fr; gap: 20px; }
   .app-icon { width: 88px; height: 88px; border-radius: 22px; }
-
-  .checklist li { grid-template-columns: 1fr; gap: 9px; }
-  .state { justify-self: start; padding: 3px 12px; }
 }
 
 @media (max-width: 460px) {
   .brand-text small { display: none; }
   .hero-actions .btn { flex: 1 1 100%; }
-  .acc summary { padding: 18px; gap: 12px; }
-  .acc-hint { display: none; }
-  .acc-body { padding: 0 18px 20px; }
 }
 
 /* ── Accesibilidad: movimiento reducido ─────────────────────────────────── */

@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Fabian Camayo — documentos legales
+   Se carga después de styles.css, que aporta los tokens y la base.
+   ========================================================================== */
+
+/* ── Cabecera del documento ─────────────────────────────────────────────── */
+.doc-hero {
+  padding: 58px 0 0;
+  border-bottom: 1px solid var(--line);
+}
+.doc-hero-inner { padding-bottom: 34px; }
+
+.doc-kind {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 5px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 100px;
+  font-family: var(--mono);
+  font-size: 0.69rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.doc-hero h1 {
+  font-size: clamp(1.75rem, 4.6vw, 2.6rem);
+  letter-spacing: -0.04em;
+}
+
+.doc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  margin-top: 20px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--dim);
+}
+.doc-meta b { color: var(--muted); font-weight: 400; }
+
+/* ── Cuerpo ─────────────────────────────────────────────────────────────── */
+.doc-main { padding: 46px 0 20px; }
+
+.doc-layout {
+  display: grid;
+  grid-template-columns: 232px minmax(0, 1fr);
+  gap: 46px;
+  align-items: start;
+}
+
+/* Sin esto, una tabla ancha estira la columna y desborda la página en móvil. */
+.doc-layout > * { min-width: 0; }
+
+.doc-body { max-width: 74ch; }
+
+/* Índice lateral */
+.toc {
+  position: sticky;
+  top: 96px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.toc h2 {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  font-weight: 400;
+}
+.toc ol {
+  margin-top: 14px;
+  display: grid;
+  gap: 9px;
+  counter-reset: toc;
+}
+.toc li { counter-increment: toc; font-size: 0.86rem; }
+.toc a {
+  display: flex;
+  gap: 9px;
+  color: var(--muted);
+  line-height: 1.45;
+  transition: color 0.2s;
+}
+.toc a::before {
+  content: counter(toc);
+  flex: none;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  color: var(--violet);
+  padding-top: 1px;
+}
+.toc a:hover { color: var(--text); }
+
+/* Prosa */
+.prose > * + * { margin-top: 15px; }
+.prose p, .prose li { color: var(--muted); }
+
+.prose h2 {
+  margin-top: 46px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 1.24rem;
+  scroll-margin-top: 96px;
+}
+.prose h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+.prose h3 {
+  margin-top: 30px;
+  font-size: 1.02rem;
+  scroll-margin-top: 96px;
+}
+
+.prose ul, .prose ol {
+  padding-left: 22px;
+  display: grid;
+  gap: 9px;
+}
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose li::marker { color: var(--violet); }
+.prose li > ul, .prose li > ol { margin-top: 9px; }
+
+.prose a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+
+.prose strong { color: var(--text); font-weight: 600; }
+
+.prose code {
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: var(--mono);
+  font-size: 0.84em;
+  color: var(--text);
+}
+
+/* Destacado */
+.callout {
+  margin-top: 24px;
+  padding: 20px 22px;
+  border: 1px solid rgba(34, 211, 238, 0.32);
+  border-left-width: 3px;
+  border-radius: var(--radius-sm);
+  background: rgba(34, 211, 238, 0.07);
+}
+.callout h3 { margin-top: 0; font-size: 0.98rem; }
+.callout p { margin-top: 9px; font-size: 0.93rem; }
+
+/* Tabla */
+.table-wrap { margin-top: 24px; overflow-x: auto; }
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.89rem;
+  min-width: 460px;
+}
+.prose caption {
+  text-align: left;
+  padding-bottom: 12px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+.prose th, .prose td {
+  padding: 12px 15px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  color: var(--muted);
+}
+.prose thead th {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.83rem;
+}
+.prose tbody tr:nth-child(even) { background: rgba(0, 0, 0, 0.16); }
+.prose td strong { color: var(--text); }
+
+/* Sí / No */
+.yes, .no {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 100px;
+  border: 1px solid var(--line-strong);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.yes { border-color: rgba(52, 211, 153, 0.5); color: var(--green); background: rgba(52, 211, 153, 0.1); }
+.no { border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd; background: rgba(139, 92, 246, 0.12); }
+
+/* Fin del documento */
+.doc-foot {
+  margin-top: 52px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.86rem;
+  color: var(--dim);
+}
+
+.doc-nav {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+.doc-nav a {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  transition: border-color 0.25s, background 0.25s, transform 0.3s var(--ease);
+}
+.doc-nav a:hover {
+  border-color: var(--line-strong);
+  background: var(--surface-strong);
+  transform: translateY(-2px);
+}
+.doc-nav small {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 6px;
+}
+.doc-nav span { font-size: 0.94rem; font-weight: 600; color: var(--text); }
+
+/* ── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .doc-layout { grid-template-columns: 1fr; gap: 32px; }
+  .toc { position: static; }
+  .toc ol { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .doc-hero { padding-top: 40px; }
+  .doc-main { padding-top: 34px; }
+  .prose h2 { margin-top: 38px; }
+}
+
+/* ── Impresión ──────────────────────────────────────────────────────────── */
+@media print {
+  .bg, .nav, .toc, .doc-nav, .footer, .progress { display: none !important; }
+  body { background: #fff; color: #000; }
+  .doc-hero { border-bottom-color: #ccc; padding-top: 0; }
+  .doc-layout { grid-template-columns: 1fr; }
+  .doc-body { max-width: none; }
+  .prose p, .prose li, .prose td, .prose th { color: #222; }
+  .prose a { color: #000; }
+  .prose h2 { border-top-color: #ccc; page-break-after: avoid; }
+  .callout { border-color: #999; background: none; }
+}

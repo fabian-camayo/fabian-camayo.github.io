@@ -162,15 +162,4 @@
 
     sections.forEach(function (item) { activeObserver.observe(item.section); });
   }
-
-  /* ── Acordeón: solo uno abierto a la vez ─────────────────────────────── */
-  var accs = document.querySelectorAll("#accordion details");
-  Array.prototype.forEach.call(accs, function (acc) {
-    acc.addEventListener("toggle", function () {
-      if (!acc.open) return;
-      Array.prototype.forEach.call(accs, function (other) {
-        if (other !== acc) other.open = false;
-      });
-    });
-  });
 })();
