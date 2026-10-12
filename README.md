@@ -9,7 +9,7 @@ Es el repositorio especial de usuario de GitHub Pages: al llamarse
 
 | Archivo | Para qué sirve |
 | --- | --- |
-| `index.html` | Página única con las secciones: perfil, habilidades, experiencia, formación y apps. |
+| `index.html` | Página única con las secciones: perfil, habilidades, experiencia, formación, apps y contacto. |
 | `note-plus/privacidad/index.html` | Política de privacidad de Note Plus. Dirección obligatoria para Google Play. |
 | `note-plus/seguridad-de-datos/index.html` | Seguridad de los datos: las respuestas del formulario de Play, explicadas. |
 | `note-plus/terminos/index.html` | Términos y condiciones de uso de Note Plus. |
@@ -42,6 +42,21 @@ La eliminación de datos no necesita una dirección propia: Play solo la pide cu
 permite crear una cuenta, y Note Plus no tiene cuentas. Está explicada dentro de la política
 de privacidad, en el apartado «Eliminación de datos».
 
+## Formulario de contacto
+
+La sección `#contacto` incluye un formulario servido por [Tally](https://tally.so/r/vG7EXA). Se
+inserta como `<iframe>` con `data-tally-src` y `https://tally.so/widgets/embed.js` (cargado con
+`async`) le ajusta la altura al contenido del formulario.
+
+- Es la vía de contacto del sitio, así que **no se publica ningún correo personal** en la página.
+- El `<iframe>` lleva `loading="lazy"`: Tally solo se carga cuando el visitante llega a la sección.
+- Debajo hay un enlace directo al formulario, por si el embed no se muestra (JavaScript
+  desactivado, bloqueadores o fallo de red).
+
+Para cambiar el formulario, basta con editar el de Tally: el sitio solo apunta a su ID
+(`vG7EXA`). Si algún día el formulario tiene otro ID, hay que actualizar las dos apariciones en
+`index.html` (el `data-tally-src` y el enlace de respaldo).
+
 ## Ver en local
 
 Como las páginas internas usan rutas absolutas (`/assets/...`), conviene servirlo en lugar de
@@ -71,5 +86,9 @@ python3 -m http.server 8000
 
 El sitio **no publica datos de contacto personales** (ni correo, ni teléfono, ni dirección).
 Solo muestra habilidades, empresas por nombre, formación, las aplicaciones propias y los
-documentos legales. Los documentos remiten al correo de soporte que figure en la ficha de
-Google Play, para no publicar la dirección directamente en el sitio.
+documentos legales. Para escribir hay un formulario de Tally, de modo que quien quiera
+contactar deja sus datos ahí y no hace falta exponer ninguna dirección en el sitio. Los
+documentos legales remiten al correo de soporte que figure en la ficha de Google Play.
+
+Aun así, el formulario es contenido de terceros: el sitio carga `tally.so/widgets/embed.js` y el
+`<iframe>` del formulario. Es el único script externo, además de las fuentes de Google.

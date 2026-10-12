@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/styles.css?v=2" />
+<link rel="stylesheet" href="assets/css/styles.css?v=3" />
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -53,6 +53,7 @@
       <a href="#experiencia">Experiencia</a>
       <a href="#formacion">Formación</a>
       <a href="#apps">Apps</a>
+      <a href="#contacto">Contacto</a>
     </nav>
   </div>
 </header>
@@ -414,9 +415,38 @@
           hablemos de tu idea.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#apps">Ver mis aplicaciones</a>
-          <a class="btn btn-ghost" href="#perfil">Sobre mi forma de trabajar</a>
+          <a class="btn btn-primary" href="#contacto-form">Escríbeme</a>
+          <a class="btn btn-ghost" href="#apps">Ver mis aplicaciones</a>
         </div>
+      </div>
+
+      <div class="card contact-card reveal" id="contacto-form">
+        <div class="contact-head">
+          <span class="eyebrow">Contacto</span>
+          <h3>Cuéntame tu proyecto</h3>
+          <p>
+            Rellena el formulario y te contesto por correo. Lo sirve Tally, así que tu dirección
+            no queda publicada en esta página.
+          </p>
+        </div>
+
+        <div class="contact-embed">
+          <iframe
+            data-tally-src="https://tally.so/embed/vG7EXA?alignLeft=1&hideTitle=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="560"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Formulario de contacto"
+          ></iframe>
+        </div>
+
+        <p class="contact-alt">
+          Si el formulario no se muestra,
+          <a href="https://tally.so/r/vG7EXA" target="_blank" rel="noopener">ábrelo en otra pestaña</a>.
+        </p>
       </div>
     </div>
   </section>
@@ -434,6 +464,7 @@
   </div>
 </footer>
 
+<script async src="https://tally.so/widgets/embed.js"></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
