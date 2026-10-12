@@ -140,8 +140,8 @@
 
       <h2 id="permisos">5. Permisos de Android</h2>
       <p>
-        <strong>Note Plus declara tres permisos</strong>, y ninguno te pide autorización: se
-        conceden al instalar y no abren ninguna ventana de permiso.
+        <strong>Note Plus declara ocho permisos, y los ocho son de la publicidad</strong>. Ninguno te
+        pide autorización: se conceden al instalar y no abren ninguna ventana de permiso.
       </p>
       <div class="table-wrap">
         <table>
@@ -153,12 +153,20 @@
             <tr><td><code>INTERNET</code></td><td>Para pedir el anuncio. Es la conexión de la que habla toda esta política.</td></tr>
             <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Lo añade la librería de anuncios para saber si hay conexión antes de pedirlo. No da acceso a ningún dato.</td></tr>
             <tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Lo añade la librería de anuncios para poder usar el identificador de publicidad de Android, explicado en la <a href="#publicidad">sección 6</a>.</td></tr>
+            <tr><td><code>ACCESS_ADSERVICES_AD_ID</code></td><td>Servicios de privacidad de Android: el proveedor puede usar el identificador de publicidad sin el identificador general del dispositivo.</td></tr>
+            <tr><td><code>ACCESS_ADSERVICES_ATTRIBUTION</code></td><td>Servicios de privacidad de Android: sirve para atribuir una conversión a un anuncio sin seguirte por otras apps.</td></tr>
+            <tr><td><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Servicios de privacidad de Android: temas de interés que el propio sistema calcula en el dispositivo, sin que el proveedor te siga.</td></tr>
+            <tr><td><code>WAKE_LOCK</code></td><td>Mantener el proceso despierto mientras llega el anuncio. Lo arrastra la librería de anuncios.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE</code></td><td>Trabajo en segundo plano de la propia librería de anuncios.</td></tr>
           </tbody>
         </table>
       </div>
       <p>
-        Esos tres permisos <strong>no dan acceso a tus notas ni a tus archivos</strong>. Ninguno de
-        ellos permite leer, enviar ni compartir el contenido que guardas.
+        Esos ocho permisos <strong>no dan acceso a tus notas ni a tus archivos</strong>. Ninguno de
+        ellos permite leer, enviar ni compartir el contenido que guardas. Los tres de
+        <code>ACCESS_ADSERVICES_*</code> son la alternativa que Android ofrece a las cookies de
+        terceros: los calcula el sistema en el teléfono y no permiten identificarte entre
+        aplicaciones.
       </p>
       <p>En particular, la app sigue sin declarar ninguno de estos permisos:</p>
       <div class="table-wrap">
@@ -227,7 +235,12 @@
         Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la app te pide
         <strong>consentimiento</strong> antes de mostrar el primer anuncio, con el mensaje que
         Google facilita para ello. Puedes aceptar o rechazar, y <strong>cambiar o retirar esa
-        decisión cuando quieras</strong> desde la propia app.
+        decisión cuando quieras</strong> con el botón «Cambiar mis opciones de anuncios», al final
+        de la sección de publicidad de la pantalla de privacidad de la app.
+      </p>
+      <p>
+        Tu decisión se guarda en el teléfono y viaja con cada petición de anuncio. Si rechazas,
+        Google no recibe autorización para usar tus datos con fines de personalización.
       </p>
       <p>
         Además, en los ajustes de Android puedes <strong>borrar o restablecer tu identificador de
@@ -269,9 +282,11 @@
       <h2 id="terceros">9. Terceros y librerías</h2>
       <p>
         El único servicio externo que recibe datos es el <strong>proveedor de publicidad</strong>
-        (Google AdMob), descrito en la <a href="#publicidad">sección 6</a>. La app no integra
-        analítica, ni redes sociales, ni herramientas de seguimiento, ni ningún otro servicio que
-        reciba información tuya.
+        (Google AdMob), descrito en la <a href="#publicidad">sección 6</a>. Aparte de ese
+        proveedor, la app no integra analítica, ni redes sociales, ni herramientas de seguimiento,
+        ni ningún otro servicio que reciba información tuya. Las librerías internas que el
+        proveedor trae consigo, entre ellas la de medición de anuncios, forman parte de él y sirven
+        para medir la publicidad, no para analizar tus notas.
       </p>
       <p>
         Para funcionar usa librerías de código abierto, que se ejecutan dentro del propio teléfono
@@ -473,7 +488,8 @@
 
       <h2 id="en-permissions">5. Android permissions</h2>
       <p>
-        <strong>Note Plus declares three permissions</strong>, and none of them asks for your
+        <strong>Note Plus declares eight permissions, and all eight belong to advertising</strong>.
+        None of them asks for your
         authorisation: they are granted on install and open no permission dialog.
       </p>
       <div class="table-wrap">
@@ -486,12 +502,20 @@
             <tr><td><code>INTERNET</code></td><td>To request the ad. It is the connection this whole policy is about.</td></tr>
             <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Added by the ads library to know whether there is a connection before requesting one. It gives access to no data.</td></tr>
             <tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Added by the ads library to be able to use the Android advertising ID, explained in <a href="#en-ads">section 6</a>.</td></tr>
+            <tr><td><code>ACCESS_ADSERVICES_AD_ID</code></td><td>Android privacy services: the provider can use the advertising ID without the general device identifier.</td></tr>
+            <tr><td><code>ACCESS_ADSERVICES_ATTRIBUTION</code></td><td>Android privacy services: used to attribute a conversion to an ad without tracking you across other apps.</td></tr>
+            <tr><td><code>ACCESS_ADSERVICES_TOPICS</code></td><td>Android privacy services: topics of interest that the system itself works out on the device, without the provider tracking you.</td></tr>
+            <tr><td><code>WAKE_LOCK</code></td><td>To keep the process awake while the ad arrives. It comes with the ads library.</td></tr>
+            <tr><td><code>FOREGROUND_SERVICE</code></td><td>Background work of the ads library itself.</td></tr>
           </tbody>
         </table>
       </div>
       <p>
-        Those three permissions <strong>give no access to your notes or your files</strong>. None of
-        them allows reading, sending or sharing the content you store.
+        Those eight permissions <strong>give no access to your notes or your files</strong>. None of
+        them allows reading, sending or sharing the content you store. The three
+        <code>ACCESS_ADSERVICES_*</code> ones are the alternative Android offers to third-party
+        cookies: the system works them out on the phone and they do not let you be identified across
+        apps.
       </p>
       <p>In particular, the app still declares none of these permissions:</p>
       <div class="table-wrap">
@@ -561,7 +585,12 @@
         If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks
         for your <strong>consent</strong> before showing the first ad, with the message Google
         provides for that purpose. You can accept or decline, and <strong>change or withdraw that
-        decision at any time</strong> from within the app.
+        decision at any time</strong> with the "Change my ad options" button at the end of the
+        advertising section of the app's privacy screen.
+      </p>
+      <p>
+        Your decision is stored on the phone and travels with every ad request. If you decline,
+        Google receives no authorisation to use your data for personalisation purposes.
       </p>
       <p>
         In addition, in Android settings you can <strong>delete or reset your advertising ID</strong>
@@ -602,9 +631,11 @@
       <h2 id="en-third-parties">9. Third parties and libraries</h2>
       <p>
         The only external service that receives data is the <strong>advertising provider</strong>
-        (Google AdMob), described in <a href="#en-ads">section 6</a>. The app includes no analytics,
-        no social networks, no tracking tools and no other service that receives information about
-        you.
+        (Google AdMob), described in <a href="#en-ads">section 6</a>. Apart from that provider, the
+        app includes no analytics, no social networks, no tracking tools and no other service that
+        receives information about you. The internal libraries that provider brings with it,
+        including the ad measurement one, are part of it and serve to measure advertising, not to
+        analyse your notes.
       </p>
       <p>
         To work, it uses open-source libraries, which run inside the phone and collect no

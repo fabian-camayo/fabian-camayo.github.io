@@ -220,9 +220,11 @@
           así que el contenido no se sube a servicios de Google.
         </li>
         <li>
-          <strong>Red, solo para anuncios.</strong> La app declara el permiso
-          <code>INTERNET</code>, pero lo usa únicamente para pedir el banner, que viaja cifrado.
-          Por esa conexión no se envía el contenido de tus notas.
+          <strong>Red, solo para anuncios.</strong> La app declara <code>INTERNET</code> y
+          <code>ACCESS_NETWORK_STATE</code>, pero los usa únicamente para pedir el banner, que
+          viaja cifrado. Los tres permisos <code>ACCESS_ADSERVICES_*</code> son los servicios de
+          privacidad de Android, la alternativa del sistema a las cookies de terceros. Por esa
+          conexión no se envía el contenido de tus notas.
         </li>
         <li>
           <strong>Borrado completo.</strong> Al eliminar una nota se borran su registro, sus
@@ -240,7 +242,8 @@
         <li>
           <strong>Permisos:</strong> mira la ficha de Note Plus en Google Play, en el apartado de
           permisos, o revisa los permisos de la app en los ajustes de tu teléfono. Solo aparecen
-          los tres de la red y la publicidad: ninguno de ellos da acceso a tus notas.
+          los ocho de la publicidad: ninguno de ellos da acceso a tus notas. El detalle está en la
+          <a href="../privacidad/#permisos">política de privacidad</a>.
         </li>
         <li>
           <strong>Sin conexión, tus notas siguen ahí:</strong> activa el modo avión y usa la
