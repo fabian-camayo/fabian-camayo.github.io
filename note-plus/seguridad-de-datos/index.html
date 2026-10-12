@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Seguridad de los datos de Note Plus — Fabian Camayo</title>
-<meta name="description" content="Declaración de seguridad de los datos de Note Plus: sin recogida, sin uso compartido, sin conexión a red. Las respuestas del formulario de Google Play, explicadas." />
+<meta name="description" content="Declaración de seguridad de los datos de Note Plus: el contenido de tus notas no sale del teléfono. La publicidad, y solo ella, se conecta a internet. Las respuestas del formulario de Google Play, explicadas." />
 <meta name="theme-color" content="#0b0f19" />
 <meta name="color-scheme" content="dark" />
 <link rel="canonical" href="https://fabian-camayo.github.io/note-plus/seguridad-de-datos/" />
@@ -39,7 +39,7 @@
     <span class="doc-kind">Documento legal · Obligatorio en Google Play</span>
     <h1>Seguridad de los datos de Note Plus</h1>
     <div class="doc-meta">
-      <span><b>Última actualización:</b> 11 de octubre de 2026</span>
+      <span><b>Última actualización:</b> 12 de octubre de 2026</span>
       <span><b>Aplicación:</b> Note Plus</span>
       <span><b>Identificador:</b> com.notesphone</span>
       <span><b>Versión:</b> 0.1.0</span>
@@ -57,6 +57,7 @@
         <li><a href="#resumen">Resumen</a></li>
         <li><a href="#recogida">Recogida y uso compartido</a></li>
         <li><a href="#tipos">Tipos de datos</a></li>
+        <li><a href="#publicidad">Publicidad y consentimiento</a></li>
         <li><a href="#acceso">Acceso a archivos y medios</a></li>
         <li><a href="#practicas">Prácticas de seguridad</a></li>
         <li><a href="#verificar">Cómo comprobarlo</a></li>
@@ -79,15 +80,17 @@
 
       <h2 id="resumen">2. Resumen</h2>
       <p>
-        Note Plus <strong>no recoge ningún dato</strong> y <strong>no comparte ningún dato</strong>.
-        No hay cuentas, no hay conexión a red y no hay servicios de terceros. La aplicación no
-        declara el permiso <code>INTERNET</code>, así que no tiene forma de transmitir información.
+        <strong>El contenido de tus notas no sale del teléfono</strong> y la app no lo transmite a
+        ningún sitio. Pero la app <strong>sí muestra publicidad</strong> para costear su
+        mantenimiento, y para eso se conecta a internet: es la única conexión que existe, y por ella
+        viajan los datos que necesita el proveedor de anuncios.
       </p>
       <div class="callout">
-        <h3>Los dos únicos datos que importan</h3>
+        <h3>Dicho en dos frases</h3>
         <p>
-          No se recogen datos y no se comparten datos. Todo lo demás que aparece en este documento
-          es el detalle de esas dos respuestas.
+          La app recoge y comparte <strong>sí</strong>, pero solo a través del proveedor de
+          publicidad, y solo los cuatro tipos de datos de la sección 4. Lo que escribes y lo que
+          añades <strong>no</strong> está entre ellos: nunca sale del dispositivo.
         </p>
       </div>
 
@@ -101,19 +104,19 @@
           <tbody>
             <tr>
               <td>¿La app recoge o comparte alguno de los datos de usuario requeridos?</td>
-              <td><span class="no">No</span></td>
+              <td><span class="yes">Sí</span><br />Solo a través del proveedor de publicidad, y solo los cuatro tipos de la sección 4. La app por sí misma no recoge nada.</td>
             </tr>
             <tr>
               <td>¿Los datos recogidos se cifran en tránsito?</td>
-              <td><span class="no">No aplica</span><br />No hay tránsito: la app no envía datos.</td>
+              <td><span class="yes">Sí</span><br />Las peticiones de anuncios viajan cifradas.</td>
             </tr>
             <tr>
               <td>¿Ofrece la app una forma de solicitar la eliminación de datos?</td>
-              <td><span class="yes">Sí</span><br />Desde la propia app y al desinstalarla. No hay datos en servidores que eliminar.</td>
+              <td><span class="no">No aplica</span><br />No hay cuentas y el desarrollador no guarda ningún dato. El usuario puede retirar su consentimiento desde la app y restablecer su identificador de publicidad desde los ajustes de Android.</td>
             </tr>
             <tr>
               <td>¿La app pide datos que no son necesarios para su función?</td>
-              <td><span class="no">No</span><br />No pide ningún dato personal.</td>
+              <td><span class="no">No</span><br />La app no pide ningún dato personal.</td>
             </tr>
             <tr>
               <td>¿Participa la app en el programa «Familias» de Google Play?</td>
@@ -125,33 +128,59 @@
 
       <h2 id="tipos">4. Tipos de datos</h2>
       <p>
-        En el formulario de Play, la respuesta a cada categoría de datos es la misma. Ninguna se
-        recoge ni se comparte:
+        En el formulario de Play, cada categoría de datos tiene su respuesta. <strong>Cuatro</strong>
+        se recogen y se comparten, y solo por la publicidad; el resto, no:
       </p>
       <div class="table-wrap">
         <table>
           <caption>Categorías de datos del formulario</caption>
           <thead>
-            <tr><th>Categoría</th><th>¿Se recoge?</th><th>¿Se comparte?</th></tr>
+            <tr><th>Categoría</th><th>¿Se recoge?</th><th>¿Se comparte?</th><th>Finalidad</th></tr>
           </thead>
           <tbody>
-            <tr><td>Ubicación</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Información personal (nombre, correo, teléfono)</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Información financiera</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Salud y forma física</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Mensajes</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Fotos y vídeos</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Archivos y documentos</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Audio</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Contactos</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Actividad en la app</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Actividad en la web</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
-            <tr><td>Información del dispositivo u otros identificadores</td><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+            <tr><td>Ubicación aproximada</td><td><span class="yes">Sí</span></td><td><span class="yes">Sí</span></td><td>Publicidad. Se estima a partir de la dirección IP; la app no pide el permiso de ubicación.</td></tr>
+            <tr><td>Ubicación precisa</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>La app no lee el GPS.</td></tr>
+            <tr><td>Información personal (nombre, correo, teléfono)</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>—</td></tr>
+            <tr><td>Información financiera</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>—</td></tr>
+            <tr><td>Salud y forma física</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>—</td></tr>
+            <tr><td>Mensajes</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>—</td></tr>
+            <tr><td>Fotos y vídeos</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>Se guardan en el teléfono, no se transmiten.</td></tr>
+            <tr><td>Archivos y documentos</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>Se guardan en el teléfono, no se transmiten.</td></tr>
+            <tr><td>Audio</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>Se guarda en el teléfono, no se transmite.</td></tr>
+            <tr><td>Contactos</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>—</td></tr>
+            <tr><td>Actividad en la app</td><td><span class="yes">Sí</span></td><td><span class="yes">Sí</span></td><td>Publicidad y medición: qué anuncios se muestran y cuáles se tocan.</td></tr>
+            <tr><td>Actividad en la web</td><td><span class="no">No</span></td><td><span class="no">No</span></td><td>La app no recoge tu navegación.</td></tr>
+            <tr><td>Información del dispositivo u otros identificadores</td><td><span class="yes">Sí</span></td><td><span class="yes">Sí</span></td><td>Publicidad: el identificador de publicidad de Android y otros identificadores del dispositivo o de la app.</td></tr>
+            <tr><td>Información y rendimiento de la app (diagnóstico)</td><td><span class="yes">Sí</span></td><td><span class="yes">Sí</span></td><td>Rendimiento de la propia librería de anuncios.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <h2 id="acceso">5. Acceso a archivos y medios</h2>
+      <h2 id="publicidad">5. Publicidad y consentimiento</h2>
+      <p>
+        La app muestra un único banner en la parte baja de la lista de notas. Lo sirve
+        <strong>Google</strong> a través de su red <strong>AdMob</strong>, y el proveedor recibe lo
+        siguiente:
+      </p>
+      <ul>
+        <li><strong>El identificador de publicidad de Android</strong> y otros identificadores del dispositivo o de la app.</li>
+        <li><strong>La dirección IP</strong>, de la que puede estimar una ubicación aproximada.</li>
+        <li><strong>Tu interacción con la publicidad y con la app</strong>: impresiones, toques y datos parecidos.</li>
+        <li><strong>Información de diagnóstico</strong> sobre el rendimiento de la propia librería.</li>
+      </ul>
+      <p>
+        <strong>El contenido de tus notas no entra en esa lista.</strong> La app no le entrega a la
+        librería de anuncios el texto de tus notas, ni tus archivos, ni tus categorías, ni tus
+        búsquedas, y no existe código que lo haga.
+      </p>
+      <p>
+        Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la app pide
+        <strong>consentimiento</strong> antes de mostrar el primer anuncio, con el mensaje que Google
+        facilita para ello, y puedes cambiar o retirar esa decisión desde la propia app. El detalle
+        completo está en la <a href="../privacidad/#publicidad">política de privacidad</a>.
+      </p>
+
+      <h2 id="acceso">6. Acceso a archivos y medios</h2>
       <p>
         Puede parecer contradictorio decir que no se recogen fotos cuando la app sirve, entre
         otras cosas, para guardar fotos. La diferencia está en <strong>quién decide y qué se
@@ -169,8 +198,9 @@
         </li>
         <li>
           <strong>No hay transmisión.</strong> En el formulario de Play, «recoger» significa
-          transmitir datos fuera del dispositivo. Aquí no hay transmisión ninguna, por lo que la
-          respuesta correcta es que no se recogen.
+          transmitir datos fuera del dispositivo. Tus archivos no se transmiten, por lo que la
+          respuesta correcta es que no se recogen. Lo que sí se transmite es lo de la publicidad,
+          que no incluye tus archivos.
         </li>
         <li>
           <strong>Sin permisos de medios.</strong> La app no declara <code>READ_MEDIA_IMAGES</code>,
@@ -179,7 +209,7 @@
         </li>
       </ul>
 
-      <h2 id="practicas">6. Prácticas de seguridad</h2>
+      <h2 id="practicas">7. Prácticas de seguridad</h2>
       <ul>
         <li>
           <strong>Almacenamiento privado.</strong> Todo se guarda en la zona que Android reserva a
@@ -190,34 +220,36 @@
           así que el contenido no se sube a servicios de Google.
         </li>
         <li>
-          <strong>Sin red.</strong> Al no declarar el permiso <code>INTERNET</code>, la aplicación no
-          puede establecer conexiones, ni siquiera por error o por una librería.
+          <strong>Red, solo para anuncios.</strong> La app declara el permiso
+          <code>INTERNET</code>, pero lo usa únicamente para pedir el banner, que viaja cifrado.
+          Por esa conexión no se envía el contenido de tus notas.
         </li>
         <li>
           <strong>Borrado completo.</strong> Al eliminar una nota se borran su registro, sus
           archivos y sus miniaturas. Al desinstalar la app se borra todo su almacenamiento.
         </li>
         <li>
-          <strong>Sin terceros.</strong> No hay publicidad, analítica, redes sociales ni
-          herramientas de seguimiento que puedan acceder al contenido.
+          <strong>Un solo tercero.</strong> Además de la red de anuncios, no hay analítica, ni redes
+          sociales, ni herramientas de seguimiento que puedan acceder al contenido.
         </li>
       </ul>
 
-      <h2 id="verificar">7. Cómo comprobarlo</h2>
+      <h2 id="verificar">8. Cómo comprobarlo</h2>
       <p>Estas afirmaciones no hay que creerlas, se pueden verificar:</p>
       <ul>
         <li>
           <strong>Permisos:</strong> mira la ficha de Note Plus en Google Play, en el apartado de
-          permisos, o revisa los permisos de la app en los ajustes de tu teléfono. La lista está
-          vacía.
+          permisos, o revisa los permisos de la app en los ajustes de tu teléfono. Solo aparecen
+          los tres de la red y la publicidad: ninguno de ellos da acceso a tus notas.
         </li>
         <li>
-          <strong>Sin conexión:</strong> activa el modo avión y usa la aplicación con normalidad.
-          Funciona exactamente igual, porque nunca necesita la red.
+          <strong>Sin conexión, tus notas siguen ahí:</strong> activa el modo avión y usa la
+          aplicación con normalidad. Puedes crear, editar y guardar notas igual que siempre; lo
+          único que no aparece es el banner.
         </li>
         <li>
-          <strong>Sin salida de datos:</strong> con el modo avión activo, todo el contenido sigue
-          ahí. Nada depende de un servidor.
+          <strong>Tus notas no viajan:</strong> con el modo avión activo, todo el contenido sigue
+          disponible. Nada de lo que guardas depende de un servidor.
         </li>
         <li>
           <strong>Borrado real:</strong> elimina una nota y comprueba que su archivo desaparece del
@@ -226,7 +258,7 @@
       </ul>
 
       <div class="doc-foot">
-        <span>Documento vigente desde el 11 de octubre de 2026.</span>
+        <span>Documento vigente desde el 12 de octubre de 2026.</span>
         <span>Note Plus · com.notesphone · versión 0.1.0</span>
       </div>
 

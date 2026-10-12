@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Política de privacidad de Note Plus — Fabian Camayo</title>
-<meta name="description" content="Política de privacidad de Note Plus, en español y en inglés: la app no recoge ni comparte datos, no usa internet y guarda todo en el almacenamiento privado del teléfono." />
+<meta name="description" content="Política de privacidad de Note Plus, en español y en inglés: tus notas no salen del teléfono. La conexión a internet existe solo para mostrar publicidad." />
 <meta name="theme-color" content="#0b0f19" />
 <meta name="color-scheme" content="dark" />
 <link rel="canonical" href="https://fabian-camayo.github.io/note-plus/privacidad/" />
@@ -39,7 +39,7 @@
     <span class="doc-kind">Documento legal · Obligatorio en Google Play</span>
     <h1>Política de privacidad de Note Plus</h1>
     <div class="doc-meta">
-      <span><b>Última actualización / Last updated:</b> 11 de octubre de 2026 / 11 October 2026</span>
+      <span><b>Última actualización / Last updated:</b> 12 de octubre de 2026 / 12 October 2026</span>
       <span><b>Aplicación / App:</b> Note Plus</span>
       <span><b>Identificador / Package:</b> com.notesphone</span>
       <span><b>Versión / Version:</b> 0.1.0</span>
@@ -64,8 +64,9 @@
         <li><a href="#resumen">Resumen</a></li>
         <li><a href="#creador">Quién creó la app</a></li>
         <li><a href="#trata">Qué datos usa la app</a></li>
-        <li><a href="#no-recoge">Qué datos no se recogen</a></li>
+        <li><a href="#no-recoge">Qué datos no recoge la app</a></li>
         <li><a href="#permisos">Permisos de Android</a></li>
+        <li><a href="#publicidad">Publicidad</a></li>
         <li><a href="#donde">Dónde se guardan los datos</a></li>
         <li><a href="#copias">Copias de seguridad y nube</a></li>
         <li><a href="#terceros">Terceros y librerías</a></li>
@@ -81,15 +82,21 @@
 
       <h2 id="resumen">1. Resumen</h2>
       <p>
-        <strong>Note Plus no recoge datos personales.</strong> La aplicación no tiene cuentas, no
-        pide registro, no se conecta a internet y no envía información a ningún servidor, ni
-        propio ni de terceros. Todo lo que escribes y todo lo que añades se queda en tu teléfono.
+        <strong>El contenido de tus notas no sale de tu teléfono.</strong> La aplicación no tiene
+        cuentas, no pide registro y no envía a ningún servidor propio el texto de tus notas ni los
+        archivos que añades. Eso no ha cambiado.
+      </p>
+      <p>
+        Lo que sí cambió es que la app <strong>ahora muestra publicidad</strong> para costear su
+        mantenimiento. Para servirla se conecta a internet, y esa conexión es la única que existe:
+        por ella viajan los datos que necesita el proveedor de anuncios, nunca el contenido de tus
+        notas.
       </p>
       <div class="callout">
         <h3>En una frase</h3>
         <p>
-          Lo que pasa en tu teléfono se queda en tu teléfono. No hay nada que recopilar porque la
-          app no tiene por dónde enviarlo: no declara el permiso de internet.
+          Tus notas se quedan en tu teléfono. Lo único que sale del dispositivo es lo necesario
+          para mostrar un anuncio, y no incluye nada de lo que escribes.
         </p>
       </div>
 
@@ -111,29 +118,49 @@
         <li><strong>Fechas de creación y modificación</strong> de cada nota y de cada archivo, para poder ordenarlos.</li>
       </ul>
       <p>
-        Ninguno de estos datos sale del dispositivo. No se envían, no se sincronizan y no se
-        comparten, porque la aplicación no dispone de conexión a red.
+        Ninguno de estos datos sale del dispositivo. La app no tiene ninguna vía para enviarlos: la
+        conexión a internet existe solo para pedir anuncios, y el contenido de tus notas no forma
+        parte de esas peticiones. El detalle está en la <a href="#publicidad">sección 6</a>.
       </p>
 
-      <h2 id="no-recoge">4. Qué datos no se recogen</h2>
-      <p>Para que quede claro, la app <strong>no</strong> recoge ni trata nada de lo siguiente:</p>
+      <h2 id="no-recoge">4. Qué datos no recoge la app</h2>
+      <p>
+        La app, por sí misma, <strong>no</strong> recoge ni trata nada de lo siguiente. Lo único que
+        recoge algo es el proveedor de anuncios, y solo lo que se detalla en la
+        <a href="#publicidad">sección 6</a>:
+      </p>
       <ul>
         <li>Nombre, correo electrónico, teléfono o cualquier dato de identidad.</li>
         <li>Datos de cuentas, porque no existe ninguna cuenta ni inicio de sesión.</li>
         <li>Contactos, calendario o mensajes del teléfono.</li>
-        <li>Ubicación, precisa o aproximada.</li>
-        <li>Identificadores de publicidad ni identificadores del dispositivo con fines comerciales.</li>
-        <li>Datos de uso, estadísticas, analítica o informes de fallos.</li>
-        <li>Información del navegador o de tu actividad en internet.</li>
-        <li>Contenido publicitario, porque la app no muestra anuncios.</li>
+        <li>Ubicación precisa: la app no pide el permiso de ubicación ni lee el GPS ni la red.</li>
+        <li>El contenido de tus notas, tus archivos, tus categorías y tus búsquedas.</li>
+        <li>Tu actividad en el navegador o en otras aplicaciones del teléfono.</li>
       </ul>
 
       <h2 id="permisos">5. Permisos de Android</h2>
       <p>
-        <strong>Note Plus no solicita ningún permiso de Android.</strong> Puedes comprobarlo en la
-        ficha de Google Play, en el apartado de permisos, o en los ajustes de tu teléfono.
+        <strong>Note Plus declara tres permisos</strong>, y ninguno te pide autorización: se
+        conceden al instalar y no abren ninguna ventana de permiso.
       </p>
-      <p>En particular, la app no declara ninguno de estos permisos:</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Permisos que la app declara</caption>
+          <thead>
+            <tr><th>Permiso</th><th>Para qué sirve</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>INTERNET</code></td><td>Para pedir el anuncio. Es la conexión de la que habla toda esta política.</td></tr>
+            <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Lo añade la librería de anuncios para saber si hay conexión antes de pedirlo. No da acceso a ningún dato.</td></tr>
+            <tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Lo añade la librería de anuncios para poder usar el identificador de publicidad de Android, explicado en la <a href="#publicidad">sección 6</a>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Esos tres permisos <strong>no dan acceso a tus notas ni a tus archivos</strong>. Ninguno de
+        ellos permite leer, enviar ni compartir el contenido que guardas.
+      </p>
+      <p>En particular, la app sigue sin declarar ninguno de estos permisos:</p>
       <div class="table-wrap">
         <table>
           <caption>Permisos que la app no declara</caption>
@@ -141,12 +168,11 @@
             <tr><th>Permiso</th><th>Por qué no hace falta</th></tr>
           </thead>
           <tbody>
-            <tr><td><code>INTERNET</code></td><td>La app no se conecta a ninguna red. Sin este permiso, es técnicamente imposible que envíe tus datos.</td></tr>
             <tr><td><code>CAMERA</code></td><td>La foto y el vídeo se capturan con las herramientas del propio sistema, que te piden el archivo ya hecho.</td></tr>
             <tr><td><code>RECORD_AUDIO</code></td><td>El audio se graba con la grabadora del sistema, no con un grabador propio de la app.</td></tr>
             <tr><td><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code></td><td>La app recibe solo el archivo que eliges, mediante el selector visual del sistema. No explora tu galería.</td></tr>
             <tr><td><code>MANAGE_EXTERNAL_STORAGE</code>, almacenamiento compartido</td><td>La app no toca el almacenamiento compartido del teléfono.</td></tr>
-            <tr><td>Ubicación, contactos, notificaciones</td><td>No se usan para nada.</td></tr>
+            <tr><td>Ubicación, contactos, notificaciones</td><td>No se usan para nada. La ubicación aproximada que puede deducir el proveedor de anuncios sale de la dirección IP, no de un permiso.</td></tr>
           </tbody>
         </table>
       </div>
@@ -158,16 +184,65 @@
       <div class="callout">
         <h3>Un permiso interno que no ves</h3>
         <p>
-          El manifiesto de la aplicación incluye un único permiso, creado y usado por la propia
-          app: <code>com.notesphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>. Es de nivel
-          <code>signature</code> y sirve para que las librerías internas de Android no dejen
+          El manifiesto de la aplicación incluye además un permiso interno, creado y usado por la
+          propia app: <code>com.notesphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>. Es de
+          nivel <code>signature</code> y sirve para que las librerías internas de Android no dejen
           receptores expuestos. <strong>No se pide al usuario, no da acceso a ningún dato y no
-          aparece en la lista de permisos de la ficha de Google Play</strong>, que está vacía. Se
-          menciona aquí para que la política describa el manifiesto exactamente como es.
+          aparece en la lista de permisos de la ficha de Google Play.</strong>
         </p>
       </div>
 
-      <h2 id="donde">6. Dónde se guardan los datos</h2>
+      <h2 id="publicidad">6. Publicidad</h2>
+      <p>
+        Note Plus muestra <strong>un solo banner</strong>, en la parte baja de la pantalla de la
+        lista de notas. No hay anuncios a pantalla completa, ni de vídeo, ni ventanas emergentes, y
+        el banner nunca se interpone entre tú y tus notas: no hay ningún anuncio dentro del editor,
+        ni en una nota abierta, ni en el widget de la pantalla de inicio.
+      </p>
+      <p>
+        Los anuncios los sirve <strong>Google</strong>, a través de su red <strong>AdMob</strong> y
+        de la librería Google Mobile Ads. Para poder mostrar cada anuncio, esa librería recoge y
+        transmite a Google:
+      </p>
+      <ul>
+        <li><strong>El identificador de publicidad de Android</strong> (Advertising ID) y otros identificadores del dispositivo o de la app.</li>
+        <li><strong>La dirección IP</strong>, de la que Google puede estimar una ubicación aproximada. La app no pide el permiso de ubicación ni lee el GPS.</li>
+        <li><strong>Tu interacción con la publicidad y con la app</strong>: qué anuncios se muestran, cuáles se tocan y datos parecidos, para medir y facturar.</li>
+        <li><strong>Información de diagnóstico</strong> sobre el rendimiento de la propia librería de anuncios.</li>
+      </ul>
+      <p>
+        <strong>El contenido de tus notas no entra en esa lista.</strong> La app no le entrega a la
+        librería de anuncios el texto de tus notas, ni tus archivos, ni tus categorías, ni tus
+        búsquedas. No existe código que lo haga, y por eso ninguna de esas cosas puede viajar en la
+        petición de un anuncio.
+      </p>
+      <p>
+        Google trata esos datos según su propia política, disponible en
+        <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">policies.google.com/technologies/ads</a>,
+        y como proveedor de publicidad actúa con sus propias responsabilidades, distintas de las de
+        esta app.
+      </p>
+      <h3>Tu elección</h3>
+      <p>
+        Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, la app te pide
+        <strong>consentimiento</strong> antes de mostrar el primer anuncio, con el mensaje que
+        Google facilita para ello. Puedes aceptar o rechazar, y <strong>cambiar o retirar esa
+        decisión cuando quieras</strong> desde la propia app.
+      </p>
+      <p>
+        Además, en los ajustes de Android puedes <strong>borrar o restablecer tu identificador de
+        publicidad</strong> en cualquier momento («Ajustes» → «Privacidad» → «Anuncios»), sin que
+        eso afecte al funcionamiento de Note Plus.
+      </p>
+      <div class="callout">
+        <h3>Sin conexión</h3>
+        <p>
+          Si no hay internet, la app funciona igual: tus notas se crean, se editan y se guardan con
+          normalidad. Lo único que no aparece es el banner.
+        </p>
+      </div>
+
+      <h2 id="donde">7. Dónde se guardan los datos</h2>
       <p>
         Todo se guarda en el <strong>almacenamiento privado de la aplicación</strong>, la zona del
         teléfono que Android reserva a cada app y que ninguna otra aplicación puede leer:
@@ -183,41 +258,48 @@
         <li><strong>Tu archivo original no se toca.</strong> Cuando añades una foto, la app guarda una copia propia. Si más tarde borras la nota, tu foto de la galería sigue donde estaba.</li>
       </ul>
 
-      <h2 id="copias">7. Copias de seguridad y nube</h2>
+      <h2 id="copias">8. Copias de seguridad y nube</h2>
       <p>
         La aplicación tiene <strong>desactivada la copia de seguridad en la nube</strong>, tanto la
         copia automática de Android como la extracción de datos hacia servicios de Google. No hay
-        sincronización con Google Drive, con ninguna nube ni con ningún servidor. Tus notas no
-        salen del teléfono por ningún mecanismo de la app.
+        sincronización con Google Drive, con ninguna nube ni con ningún servidor. El contenido de
+        tus notas no sale del teléfono por ningún mecanismo de la app.
       </p>
 
-      <h2 id="terceros">8. Terceros y librerías</h2>
+      <h2 id="terceros">9. Terceros y librerías</h2>
       <p>
-        La app <strong>no integra publicidad, ni analítica, ni redes sociales, ni herramientas de
-        seguimiento</strong>. No hay ningún servicio de terceros que reciba datos tuyos.
+        El único servicio externo que recibe datos es el <strong>proveedor de publicidad</strong>
+        (Google AdMob), descrito en la <a href="#publicidad">sección 6</a>. La app no integra
+        analítica, ni redes sociales, ni herramientas de seguimiento, ni ningún otro servicio que
+        reciba información tuya.
       </p>
       <p>
-        Para funcionar usa librerías de código abierto, que se ejecutan dentro del propio
-        teléfono y no recogen información:
+        Para funcionar usa librerías de código abierto, que se ejecutan dentro del propio teléfono
+        y no recogen información:
       </p>
       <ul>
         <li><strong>AndroidX y Material Components</strong>, el conjunto de componentes de interfaz de Android.</li>
         <li><strong>Room</strong>, la base de datos local donde se guardan las notas.</li>
         <li><strong>Glide</strong>, que solo sirve para mostrar en pantalla las imágenes que ya están guardadas en el teléfono.</li>
       </ul>
-
-      <h2 id="menores">9. Menores de edad</h2>
       <p>
-        La app no recoge ningún dato de nadie, así que tampoco recoge datos de menores. No tiene
-        contenido dirigido específicamente a menores, ni compras, ni publicidad, ni comunicación
-        con otras personas. <strong>No está dirigida a menores de 13 años.</strong>
+        La única librería de terceros que no es de código abierto es la de anuncios, y es la que se
+        describe en la <a href="#publicidad">sección 6</a>.
       </p>
 
-      <h2 id="eliminacion">10. Eliminación de datos</h2>
+      <h2 id="menores">10. Menores de edad</h2>
       <p>
-        Como no hay cuentas ni servidores, no existe ningún dato tuyo alojado fuera del teléfono
-        que haya que solicitar borrar. La eliminación la controlas tú por completo, desde la
-        propia app:
+        La app no recoge ningún dato personal de nadie, así que tampoco de menores. No tiene
+        contenido dirigido específicamente a menores, ni compras, ni comunicación con otras
+        personas. <strong>No está dirigida a menores de 13 años</strong>, y precisamente por eso sus
+        anuncios no se configuran para un público infantil.
+      </p>
+
+      <h2 id="eliminacion">11. Eliminación de datos</h2>
+      <p>
+        Como no hay cuentas ni servidores propios, no existe ningún dato tuyo alojado por el
+        desarrollador que haya que solicitar borrar. La eliminación de tus notas la controlas tú
+        por completo, desde la propia app:
       </p>
       <ul>
         <li><strong>Borrar una nota:</strong> elimina el texto, sus archivos asociados y sus miniaturas. No queda copia.</li>
@@ -225,33 +307,54 @@
         <li><strong>Borrar los datos de la app:</strong> desde los ajustes de Android, en el apartado de la aplicación, puedes vaciar todo su almacenamiento.</li>
         <li><strong>Borrarlo todo:</strong> al desinstalar Note Plus se elimina el almacenamiento privado completo de la app.</li>
       </ul>
+      <p>
+        Los datos que la publicidad envía a Google no están en tu teléfono ni en poder del
+        desarrollador, así que no se borran al desinstalar la app. Para eso tienes dos vías: retirar
+        el consentimiento desde la propia app, y borrar o restablecer el identificador de
+        publicidad desde los ajustes de Android.
+      </p>
       <div class="callout">
         <h3>Copia de seguridad, por tu parte</h3>
         <p>
-          Precisamente porque nada sale del teléfono, <strong>tampoco hay una copia en la nube</strong>
-          que pueda restaurar tus notas si borras la app, pierdes el teléfono o lo restableces de
-          fábrica. Tenlo en cuenta si guardas notas que no quieres perder.
+          Precisamente porque tus notas no salen del teléfono, <strong>tampoco hay una copia en la
+          nube</strong> que pueda restaurarlas si borras la app, pierdes el teléfono o lo
+          restableces de fábrica. Tenlo en cuenta si guardas notas que no quieres perder.
         </p>
       </div>
 
-      <h2 id="derechos">11. Tus derechos</h2>
+      <h2 id="derechos">12. Tus derechos</h2>
       <p>
         Las normas de protección de datos reconocen derechos como el acceso, la rectificación, la
-        supresión, la portabilidad o la oposición al tratamiento. En este caso
-        <strong>no hay nada que ejercer frente al desarrollador</strong>, porque no existe ningún
-        tratamiento de datos personales por su parte: no hay recogida, ni almacenamiento, ni
-        comunicación a terceros.
+        supresión, la portabilidad o la oposición al tratamiento, y también el derecho a retirar el
+        consentimiento.
       </p>
-
-      <h2 id="cambios">12. Cambios en esta política</h2>
       <p>
-        Si en el futuro la app incorpora alguna función que cambie esto (por ejemplo, una
-        sincronización opcional), esta política se actualizará antes de publicar esa versión y se
-        cambiará la fecha que aparece al principio del documento. Te recomendamos revisarla de vez
-        en cuando.
+        Respecto a tus notas, <strong>no hay nada que ejercer</strong>: el desarrollador no recibe,
+        no almacena ni comunica el contenido que guardas, porque nunca sale de tu teléfono.
+      </p>
+      <p>
+        Respecto a la publicidad, sí hay un tratamiento, y lo lleva a cabo Google como proveedor.
+        Para ejercer ahí tus derechos tienes estas vías:
+      </p>
+      <ul>
+        <li><strong>Retirar el consentimiento</strong> desde la propia app, si estás en una región donde se te pidió.</li>
+        <li><strong>Restablecer o borrar el identificador de publicidad</strong> desde los ajustes de Android.</li>
+        <li><strong>Dirigirte a Google</strong>, que es quien trata esos datos, a través de
+          <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">policies.google.com/privacy</a>.</li>
+      </ul>
+
+      <h2 id="cambios">13. Cambios en esta política</h2>
+      <p>
+        Esta versión es la primera que describe publicidad. Hasta la anterior, la app no mostraba
+        anuncios y no se conectaba a ninguna red.
+      </p>
+      <p>
+        Si en el futuro la app incorpora alguna función que cambie esto, esta política se
+        actualizará antes de publicar esa versión y se cambiará la fecha que aparece al principio
+        del documento. Te recomendamos revisarla de vez en cuando.
       </p>
 
-      <h2 id="contacto">13. Contacto</h2>
+      <h2 id="contacto">14. Contacto</h2>
       <p>
         Para cualquier duda sobre esta política puedes usar el canal de soporte de la aplicación:
       </p>
@@ -261,7 +364,7 @@
       </ul>
 
       <div class="doc-foot">
-        <span>Documento vigente desde el 11 de octubre de 2026.</span>
+        <span>Documento vigente desde el 12 de octubre de 2026.</span>
         <span>Note Plus · com.notesphone · versión 0.1.0</span>
       </div>
 
@@ -294,8 +397,9 @@
         <li><a href="#en-summary">Summary</a></li>
         <li><a href="#en-created">Who created the app</a></li>
         <li><a href="#en-data">What data the app uses</a></li>
-        <li><a href="#en-not-collected">What data is not collected</a></li>
+        <li><a href="#en-not-collected">What data the app does not collect</a></li>
         <li><a href="#en-permissions">Android permissions</a></li>
+        <li><a href="#en-ads">Advertising</a></li>
         <li><a href="#en-storage">Where the data is stored</a></li>
         <li><a href="#en-backups">Backups and cloud</a></li>
         <li><a href="#en-third-parties">Third parties and libraries</a></li>
@@ -311,16 +415,21 @@
 
       <h2 id="en-summary">1. Summary</h2>
       <p>
-        <strong>Note Plus does not collect personal data.</strong> The app has no accounts, asks
-        for no sign-up, does not connect to the internet and sends no information to any server,
-        either its own or a third party's. Everything you write and everything you add stays on
-        your phone.
+        <strong>The content of your notes does not leave your phone.</strong> The app has no
+        accounts, asks for no sign-up and sends the text of your notes, or the files you add, to no
+        server of its own. That has not changed.
+      </p>
+      <p>
+        What has changed is that the app <strong>now shows advertising</strong> to cover its
+        maintenance. Serving those ads requires a connection to the internet, and that connection is
+        the only one there is: what travels over it is the data the ad provider needs, never the
+        content of your notes.
       </p>
       <div class="callout">
         <h3>In one sentence</h3>
         <p>
-          What happens on your phone stays on your phone. There is nothing to collect, because the
-          app has no way to send it: it does not declare the internet permission.
+          Your notes stay on your phone. The only thing that leaves the device is what is needed to
+          show an ad, and that does not include anything you write.
         </p>
       </div>
 
@@ -342,29 +451,49 @@
         <li><strong>Creation and modification dates</strong> of each note and each file, so that they can be sorted.</li>
       </ul>
       <p>
-        None of this data leaves the device. It is not sent, not synchronised and not shared,
-        because the application has no network connection.
+        None of this data leaves the device. The app has no way to send it: the internet connection
+        exists only to request ads, and the content of your notes is not part of those requests. See
+        <a href="#en-ads">section 6</a> for the detail.
       </p>
 
-      <h2 id="en-not-collected">4. What data is not collected</h2>
-      <p>To be clear, the app does <strong>not</strong> collect or process any of the following:</p>
+      <h2 id="en-not-collected">4. What data the app does not collect</h2>
+      <p>
+        The app, by itself, does <strong>not</strong> collect or process any of the following. The
+        only thing that collects anything is the ad provider, and only what
+        <a href="#en-ads">section 6</a> describes:
+      </p>
       <ul>
         <li>Name, email address, phone number or any identity data.</li>
         <li>Account data, because there is no account and no sign-in.</li>
         <li>Contacts, calendar or messages on the phone.</li>
-        <li>Location, precise or approximate.</li>
-        <li>Advertising identifiers or device identifiers for commercial purposes.</li>
-        <li>Usage data, statistics, analytics or crash reports.</li>
-        <li>Browser information or your activity on the internet.</li>
-        <li>Advertising content, because the app shows no ads.</li>
+        <li>Precise location: the app does not request the location permission and does not read GPS or network location.</li>
+        <li>The content of your notes, your files, your categories and your searches.</li>
+        <li>Your activity in the browser or in other applications on the phone.</li>
       </ul>
 
       <h2 id="en-permissions">5. Android permissions</h2>
       <p>
-        <strong>Note Plus requests no Android permission.</strong> You can check this on the Google
-        Play listing, in the permissions section, or in your phone settings.
+        <strong>Note Plus declares three permissions</strong>, and none of them asks for your
+        authorisation: they are granted on install and open no permission dialog.
       </p>
-      <p>In particular, the app declares none of these permissions:</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Permissions the app declares</caption>
+          <thead>
+            <tr><th>Permission</th><th>What it is for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>INTERNET</code></td><td>To request the ad. It is the connection this whole policy is about.</td></tr>
+            <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Added by the ads library to know whether there is a connection before requesting one. It gives access to no data.</td></tr>
+            <tr><td><code>com.google.android.gms.permission.AD_ID</code></td><td>Added by the ads library to be able to use the Android advertising ID, explained in <a href="#en-ads">section 6</a>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Those three permissions <strong>give no access to your notes or your files</strong>. None of
+        them allows reading, sending or sharing the content you store.
+      </p>
+      <p>In particular, the app still declares none of these permissions:</p>
       <div class="table-wrap">
         <table>
           <caption>Permissions the app does not declare</caption>
@@ -372,12 +501,11 @@
             <tr><th>Permission</th><th>Why it is not needed</th></tr>
           </thead>
           <tbody>
-            <tr><td><code>INTERNET</code></td><td>The app connects to no network. Without this permission, it is technically impossible for it to send your data.</td></tr>
             <tr><td><code>CAMERA</code></td><td>The photo and the video are captured with the tools of the system itself, which hand over the finished file.</td></tr>
             <tr><td><code>RECORD_AUDIO</code></td><td>Audio is recorded with the recorder of the system, not with a recorder of the app's own.</td></tr>
             <tr><td><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code></td><td>The app receives only the file you pick, through the visual picker of the system. It does not browse your gallery.</td></tr>
             <tr><td><code>MANAGE_EXTERNAL_STORAGE</code>, shared storage</td><td>The app does not touch the shared storage of the phone.</td></tr>
-            <tr><td>Location, contacts, notifications</td><td>They are not used at all.</td></tr>
+            <tr><td>Location, contacts, notifications</td><td>They are not used at all. The approximate location the ad provider may infer comes from the IP address, not from a permission.</td></tr>
           </tbody>
         </table>
       </div>
@@ -389,17 +517,65 @@
       <div class="callout">
         <h3>An internal permission you do not see</h3>
         <p>
-          The manifest of the application includes one single permission, created and used by the
-          app itself: <code>com.notesphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>. It is a
-          <code>signature</code> permission, and it exists so that the internal Android libraries
-          do not leave receivers exposed. <strong>It is not requested from the user, it gives
-          access to no data and it does not appear in the permissions list of the Google Play
-          listing</strong>, which is empty. It is mentioned here so that this policy describes the
-          manifest exactly as it is.
+          The manifest of the application also includes an internal permission, created and used by
+          the app itself: <code>com.notesphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>. It
+          is a <code>signature</code> permission, and it exists so that the internal Android
+          libraries do not leave receivers exposed. <strong>It is not requested from the user, it
+          gives access to no data and it does not appear in the permissions list of the Google Play
+          listing.</strong>
         </p>
       </div>
 
-      <h2 id="en-storage">6. Where the data is stored</h2>
+      <h2 id="en-ads">6. Advertising</h2>
+      <p>
+        Note Plus shows <strong>a single banner</strong>, at the bottom of the note list screen.
+        There are no full-screen or video ads and no pop-ups, and the banner never comes between you
+        and your notes: there is no ad inside the editor, or in an open note, or in the home screen
+        widget.
+      </p>
+      <p>
+        The ads are served by <strong>Google</strong>, through its <strong>AdMob</strong> network and
+        the Google Mobile Ads library. To show each ad, that library collects and transmits to
+        Google:
+      </p>
+      <ul>
+        <li><strong>The Android advertising ID</strong> and other device or app identifiers.</li>
+        <li><strong>The IP address</strong>, from which Google may estimate an approximate location. The app does not request the location permission and does not read GPS.</li>
+        <li><strong>Your interaction with the advertising and with the app</strong>: which ads are shown, which are tapped, and similar data, for measurement and billing.</li>
+        <li><strong>Diagnostic information</strong> about the performance of the ads library itself.</li>
+      </ul>
+      <p>
+        <strong>The content of your notes is not on that list.</strong> The app does not hand the
+        ads library the text of your notes, or your files, or your categories, or your searches.
+        There is no code that does so, and that is why none of those things can travel in an ad
+        request.
+      </p>
+      <p>
+        Google processes that data under its own policy, available at
+        <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">policies.google.com/technologies/ads</a>,
+        and as an advertising provider it acts with its own responsibilities, separate from those of
+        this app.
+      </p>
+      <h3>Your choice</h3>
+      <p>
+        If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks
+        for your <strong>consent</strong> before showing the first ad, with the message Google
+        provides for that purpose. You can accept or decline, and <strong>change or withdraw that
+        decision at any time</strong> from within the app.
+      </p>
+      <p>
+        In addition, in Android settings you can <strong>delete or reset your advertising ID</strong>
+        at any time («Settings» → «Privacy» → «Ads»), without that affecting how Note Plus works.
+      </p>
+      <div class="callout">
+        <h3>Offline</h3>
+        <p>
+          With no internet the app works the same: your notes are created, edited and saved as
+          usual. The only thing that does not appear is the banner.
+        </p>
+      </div>
+
+      <h2 id="en-storage">7. Where the data is stored</h2>
       <p>
         Everything is stored in the <strong>private storage of the application</strong>, the area
         of the phone that Android reserves for each app and that no other application can read:
@@ -415,18 +591,20 @@
         <li><strong>Your original file is not touched.</strong> When you add a photo, the app keeps its own copy. If you later delete the note, your gallery photo stays where it was.</li>
       </ul>
 
-      <h2 id="en-backups">7. Backups and cloud</h2>
+      <h2 id="en-backups">8. Backups and cloud</h2>
       <p>
         The application has <strong>cloud backup disabled</strong>, both the automatic Android
         backup and the extraction of data to Google services. There is no synchronisation with
-        Google Drive, with any cloud or with any server. Your notes do not leave the phone through
-        any mechanism of the app.
+        Google Drive, with any cloud or with any server. The content of your notes does not leave
+        the phone through any mechanism of the app.
       </p>
 
-      <h2 id="en-third-parties">8. Third parties and libraries</h2>
+      <h2 id="en-third-parties">9. Third parties and libraries</h2>
       <p>
-        The app <strong>includes no advertising, no analytics, no social networks and no tracking
-        tools</strong>. There is no third-party service that receives your data.
+        The only external service that receives data is the <strong>advertising provider</strong>
+        (Google AdMob), described in <a href="#en-ads">section 6</a>. The app includes no analytics,
+        no social networks, no tracking tools and no other service that receives information about
+        you.
       </p>
       <p>
         To work, it uses open-source libraries, which run inside the phone and collect no
@@ -437,19 +615,24 @@
         <li><strong>Room</strong>, the local database where the notes are stored.</li>
         <li><strong>Glide</strong>, used only to show on screen the images already stored on the phone.</li>
       </ul>
-
-      <h2 id="en-minors">9. Minors</h2>
       <p>
-        The app collects no data from anyone, so it collects no data from minors either. It has no
-        content aimed specifically at minors, no purchases, no advertising and no communication
-        with other people. <strong>It is not directed at children under 13 years of age.</strong>
+        The only third-party library that is not open source is the ads library, which is the one
+        described in <a href="#en-ads">section 6</a>.
       </p>
 
-      <h2 id="en-deletion">10. Deleting your data</h2>
+      <h2 id="en-minors">10. Minors</h2>
       <p>
-        Since there are no accounts and no servers, there is no data of yours held outside the
-        phone that you would need to ask to be deleted. You control deletion entirely from the app
-        itself:
+        The app collects no personal data from anyone, so it collects none from minors either. It
+        has no content aimed specifically at minors, no purchases and no communication with other
+        people. <strong>It is not directed at children under 13 years of age</strong>, and precisely
+        for that reason its ads are not configured for a child audience.
+      </p>
+
+      <h2 id="en-deletion">11. Deleting your data</h2>
+      <p>
+        Since there are no accounts and no servers of the developer's own, there is no data of yours
+        held by the developer that you would need to ask to be deleted. You control the deletion of
+        your notes entirely from the app itself:
       </p>
       <ul>
         <li><strong>Deleting a note:</strong> removes the text, its associated files and its thumbnails. No copy remains.</li>
@@ -457,31 +640,53 @@
         <li><strong>Deleting the app's data:</strong> from Android settings, in the application section, you can clear its whole storage.</li>
         <li><strong>Deleting everything:</strong> uninstalling Note Plus removes the complete private storage of the app.</li>
       </ul>
+      <p>
+        The data that advertising sends to Google is not on your phone and is not held by the
+        developer, so it is not deleted by uninstalling the app. For that you have two routes:
+        withdrawing consent from within the app, and deleting or resetting the advertising ID from
+        Android settings.
+      </p>
       <div class="callout">
         <h3>A backup, on your side</h3>
         <p>
-          Precisely because nothing leaves the phone, there is <strong>also no cloud copy</strong>
-          that could restore your notes if you delete the app, lose the phone or reset it to
+          Precisely because your notes do not leave the phone, there is <strong>also no cloud
+          copy</strong> that could restore them if you delete the app, lose the phone or reset it to
           factory settings. Keep that in mind if you store notes you do not want to lose.
         </p>
       </div>
 
-      <h2 id="en-rights">11. Your rights</h2>
+      <h2 id="en-rights">12. Your rights</h2>
       <p>
         Data protection rules recognise rights such as access, rectification, erasure, portability
-        or objection to processing. In this case <strong>there is nothing to exercise before the
-        developer</strong>, because there is no processing of personal data on his side: no
-        collection, no storage and no communication to third parties.
+        or objection to processing, and also the right to withdraw consent.
       </p>
-
-      <h2 id="en-changes">12. Changes to this policy</h2>
       <p>
-        If in the future the app adds a feature that changes this (for example, optional
-        synchronisation), this policy will be updated before that version is published and the date
-        at the top of the document will be changed. We recommend reviewing it from time to time.
+        As for your notes, <strong>there is nothing to exercise</strong>: the developer does not
+        receive, store or communicate the content you save, because it never leaves your phone.
+      </p>
+      <p>
+        As for advertising, there is indeed processing, and Google carries it out as the provider.
+        To exercise your rights there you have these routes:
+      </p>
+      <ul>
+        <li><strong>Withdraw consent</strong> from within the app, if you are in a region where it was requested.</li>
+        <li><strong>Reset or delete the advertising ID</strong> from Android settings.</li>
+        <li><strong>Contact Google</strong>, which is the party processing that data, through
+          <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">policies.google.com/privacy</a>.</li>
+      </ul>
+
+      <h2 id="en-changes">13. Changes to this policy</h2>
+      <p>
+        This version is the first that describes advertising. Until the previous one, the app showed
+        no ads and did not connect to any network.
+      </p>
+      <p>
+        If in the future the app adds a feature that changes this, this policy will be updated
+        before that version is published and the date at the top of the document will be changed. We
+        recommend reviewing it from time to time.
       </p>
 
-      <h2 id="en-contact">13. Contact</h2>
+      <h2 id="en-contact">14. Contact</h2>
       <p>
         For any question about this policy you can use the support channel of the application:
       </p>
@@ -491,7 +696,7 @@
       </ul>
 
       <div class="doc-foot">
-        <span>This document has been in force since 11 October 2026.</span>
+        <span>This document has been in force since 12 October 2026.</span>
         <span>Note Plus · com.notesphone · version 0.1.0</span>
       </div>
 
