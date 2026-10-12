@@ -233,14 +233,6 @@ button { font: inherit; color: inherit; }
   background: var(--grad);
 }
 
-.nav-cta {
-  border: 1px solid var(--line-strong);
-  color: var(--text) !important;
-  background: var(--surface);
-}
-.nav-cta:hover { border-color: rgba(34, 211, 238, 0.6); }
-.nav-cta::after { display: none !important; }
-
 .nav-toggle {
   display: none;
   width: 44px;
@@ -500,7 +492,6 @@ button { font: inherit; color: inherit; }
   white-space: nowrap;
 }
 .chip-live { border-color: rgba(52, 211, 153, 0.5); color: var(--green); background: rgba(52, 211, 153, 0.1); }
-.chip-soon { border-color: rgba(251, 191, 36, 0.45); color: var(--amber); background: rgba(251, 191, 36, 0.08); }
 .chip-dashed { border-style: dashed; }
 
 /* ── Formación ──────────────────────────────────────────────────────────── */
@@ -557,89 +548,60 @@ button { font: inherit; color: inherit; }
   font-size: 0.9rem;
 }
 
-/* ── Documentos legales ─────────────────────────────────────────────────── */
-.docs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
-  gap: 20px;
-}
-
-.doc-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.doc-tag {
-  display: inline-block;
-  margin-bottom: 14px;
-  padding: 4px 11px;
-  border: 1px solid var(--line-strong);
-  border-radius: 100px;
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.doc-tag-req {
-  border-color: rgba(251, 191, 36, 0.5);
-  color: var(--amber);
-  background: rgba(251, 191, 36, 0.08);
-}
-
-.doc-card h3 { font-size: 1.06rem; }
-.doc-card p { margin-top: 10px; }
-
-.doc-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: auto;
-  padding-top: 18px;
-  font-size: 0.87rem;
-  font-weight: 600;
-  color: var(--cyan);
-}
-.doc-link span { transition: transform 0.3s var(--ease); }
-.doc-card:hover .doc-link span { transform: translateX(5px); }
-
-.docs-note { margin-top: 20px; }
-.docs-note h3 { font-size: 1.02rem; }
-.docs-note p { margin-top: 10px; max-width: 78ch; }
-.docs-note a {
-  color: var(--cyan);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-/* Enlaces a los documentos dentro de la tarjeta de una app */
-.app-legal {
+/* ── Documentos dentro de la tarjeta de una app ─────────────────────────── */
+.app-docs {
   margin-top: 22px;
   padding-top: 20px;
   border-top: 1px solid var(--line);
 }
-.app-legal-title {
-  display: block;
-  margin-bottom: 12px;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--dim);
+
+.app-docs summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 100px;
+  background: var(--surface);
+  font-size: 0.87rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: border-color 0.25s, background 0.25s;
 }
-.app-legal ul { display: flex; flex-wrap: wrap; gap: 10px; }
-.app-legal a {
+.app-docs summary::-webkit-details-marker { display: none; }
+.app-docs summary:hover {
+  border-color: rgba(139, 92, 246, 0.7);
+  background: var(--surface-strong);
+}
+
+.app-docs-chevron {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translate(-2px, -2px);
+  transition: transform 0.3s var(--ease);
+}
+.app-docs[open] .app-docs-chevron { transform: rotate(225deg) translate(-3px, -1px); }
+
+.app-docs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+.app-docs-list a {
   display: inline-block;
-  padding: 7px 14px;
+  padding: 8px 15px;
   border: 1px solid var(--line);
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.035);
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   color: var(--muted);
   transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
-.app-legal a:hover {
+.app-docs-list a:hover {
   color: var(--text);
   border-color: rgba(34, 211, 238, 0.55);
   background: var(--surface-strong);
@@ -750,6 +712,6 @@ button { font: inherit; color: inherit; }
 @media print {
   .bg, .nav, .progress, .footer, .hero-actions { display: none !important; }
   body { background: #fff; color: #000; }
-  .card, .acc { border-color: #ccc; background: none; }
+  .card { border-color: #ccc; background: none; }
   .reveal { opacity: 1; transform: none; }
 }

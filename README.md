@@ -9,7 +9,7 @@ Es el repositorio especial de usuario de GitHub Pages: al llamarse
 
 | Archivo | Para qué sirve |
 | --- | --- |
-| `index.html` | Página única con las secciones: perfil, habilidades, experiencia, formación, apps y documentos legales. |
+| `index.html` | Página única con las secciones: perfil, habilidades, experiencia, formación y apps. |
 | `note-plus/privacidad/index.html` | Política de privacidad de Note Plus. Dirección obligatoria para Google Play. |
 | `note-plus/seguridad-de-datos/index.html` | Seguridad de los datos: las respuestas del formulario de Play, explicadas. |
 | `note-plus/terminos/index.html` | Términos y condiciones de uso de Note Plus. |
@@ -33,6 +33,10 @@ inicio de sesión. Estas son las direcciones para la ficha del Play Console:
 - Seguridad de los datos: `https://fabian-camayo.github.io/note-plus/seguridad-de-datos/`
 - Términos y condiciones: `https://fabian-camayo.github.io/note-plus/terminos/`
 - Soporte: `https://fabian-camayo.github.io/note-plus/soporte/`
+
+Estos documentos **no tienen una sección propia en la página de inicio**: se llega a ellos por
+su dirección directa, y desde el botón «Documentos legales» del panel de Note Plus, en el
+apartado de apps.
 
 La eliminación de datos no necesita una dirección propia: Play solo la pide cuando la app
 permite crear una cuenta, y Note Plus no tiene cuentas. Está explicada dentro de la política

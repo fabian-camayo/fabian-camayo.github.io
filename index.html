@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/css/styles.css?v=2" />
 </head>
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -53,7 +53,6 @@
       <a href="#experiencia">Experiencia</a>
       <a href="#formacion">Formación</a>
       <a href="#apps">Apps</a>
-      <a class="nav-cta" href="#documentos">Documentos</a>
     </nav>
   </div>
 </header>
@@ -348,7 +347,7 @@
             <div class="app-name-row">
               <h3>Note Plus</h3>
               <span class="chip">Android</span>
-              <span class="chip chip-soon">En preparación para Google Play</span>
+              <span class="chip chip-live">Publicada en Google Play</span>
             </div>
             <p class="app-desc">
               Notas personales que viven en el teléfono. Texto, imágenes, vídeos y audios, con
@@ -370,7 +369,6 @@
                 </svg>
                 Ver en Google Play
               </a>
-              <a class="btn btn-ghost btn-sm" href="#documentos">Documentos legales</a>
             </div>
           </div>
         </div>
@@ -382,86 +380,27 @@
           <li><strong>Idiomas</strong> · español e inglés</li>
         </ul>
 
-        <div class="app-legal">
-          <span class="app-legal-title">Documentos</span>
-          <ul>
+        <details class="app-docs">
+          <summary>
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M6 2h7l5 5v15H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.6V8h4.4L13 3.6ZM8 13.2h8v-1.5H8v1.5Zm0 4h8v-1.5H8v1.5Z"/>
+            </svg>
+            Documentos legales
+            <span class="app-docs-chevron" aria-hidden="true"></span>
+          </summary>
+          <ul class="app-docs-list">
             <li><a href="note-plus/privacidad/">Política de privacidad</a></li>
             <li><a href="note-plus/terminos/">Términos y condiciones</a></li>
             <li><a href="note-plus/seguridad-de-datos/">Seguridad de los datos</a></li>
             <li><a href="note-plus/soporte/">Soporte</a></li>
           </ul>
-        </div>
+        </details>
       </article>
 
       <p class="apps-next reveal">
         <span class="chip chip-dashed">Próximamente</span>
         La siguiente aplicación se anunciará aquí.
       </p>
-    </div>
-  </section>
-
-  <!-- ─────────────────────── Documentos legales ─────────────────────── -->
-  <section class="section" id="documentos">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Documentos de Note Plus</span>
-        <h2>Privacidad, términos y acuerdos</h2>
-        <p>
-          Los documentos que acompañan a la app y que Google Play pide o recomienda tener
-          publicados en una dirección abierta, sin inicio de sesión y sin descargas.
-        </p>
-      </div>
-
-      <div class="docs-grid">
-        <a class="card doc-card reveal" href="note-plus/privacidad/">
-          <span class="doc-tag doc-tag-req">Obligatorio</span>
-          <h3>Política de privacidad</h3>
-          <p>
-            Qué datos usa la app, dónde se guardan y qué no se recoge. Es la dirección que se
-            declara en la ficha de Google Play.
-          </p>
-          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
-        </a>
-
-        <a class="card doc-card reveal" href="note-plus/seguridad-de-datos/">
-          <span class="doc-tag doc-tag-req">Obligatorio</span>
-          <h3>Seguridad de los datos</h3>
-          <p>
-            Las respuestas del formulario de seguridad de datos de Play, explicadas una a una y
-            comprobables en la app.
-          </p>
-          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
-        </a>
-
-        <a class="card doc-card reveal" href="note-plus/terminos/">
-          <span class="doc-tag">Acuerdo</span>
-          <h3>Términos y condiciones</h3>
-          <p>
-            Licencia de uso, qué puedes esperar de la app, límites de responsabilidad y ley
-            aplicable.
-          </p>
-          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
-        </a>
-
-        <a class="card doc-card reveal" href="note-plus/soporte/">
-          <span class="doc-tag">Ficha de Play</span>
-          <h3>Soporte</h3>
-          <p>
-            Cómo reportar un problema, qué información conviene incluir y preguntas frecuentes.
-          </p>
-          <span class="doc-link">Leer documento <span aria-hidden="true">→</span></span>
-        </a>
-      </div>
-
-      <div class="card docs-note reveal">
-        <h3>Eliminación de datos</h3>
-        <p>
-          Play exige una dirección para eliminar los datos solo cuando la app permite crear una
-          cuenta. Note Plus no tiene cuentas ni servidores, así que los datos se borran desde la
-          propia app al eliminar una nota, o al desinstalarla. Está detallado en la
-          <a href="note-plus/privacidad/#eliminacion">política de privacidad</a>.
-        </p>
-      </div>
     </div>
   </section>
 
@@ -489,7 +428,7 @@
     <p>© <span id="year"></span> Fabian Camayo · Desarrollador independiente</p>
     <ul class="footer-links">
       <li><a href="https://github.com/fabian-camayo" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="#documentos">Documentos legales</a></li>
+      <li><a href="#apps">Note Plus</a></li>
       <li><a href="#inicio">Volver arriba</a></li>
     </ul>
   </div>
