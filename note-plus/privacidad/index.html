@@ -4,14 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Política de privacidad de Note Plus — Fabian Camayo</title>
-<meta name="description" content="Política de privacidad de Note Plus: la app no recoge ni comparte datos, no usa internet y guarda todo en el almacenamiento privado del teléfono." />
+<meta name="description" content="Política de privacidad de Note Plus, en español y en inglés: la app no recoge ni comparte datos, no usa internet y guarda todo en el almacenamiento privado del teléfono." />
 <meta name="theme-color" content="#0b0f19" />
 <meta name="color-scheme" content="dark" />
 <link rel="canonical" href="https://fabian-camayo.github.io/note-plus/privacidad/" />
-<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/styles.css?v=5" />
-<link rel="stylesheet" href="/assets/css/legal.css" />
+<link rel="stylesheet" href="../../assets/css/styles.css?v=5" />
+<link rel="stylesheet" href="../../assets/css/legal.css" />
 </head>
 <body>
 <a class="skip-link" href="#documento">Saltar al contenido</a>
@@ -23,14 +23,14 @@
 
 <header class="nav is-stuck">
   <div class="wrap nav-inner">
-    <a class="brand" href="/">
+    <a class="brand" href="../../">
       <span class="brand-mark" aria-hidden="true">FC</span>
       <span class="brand-text">
         <strong>Fabian Camayo</strong>
         <small>Desarrollador independiente</small>
       </span>
     </a>
-    <a class="btn btn-ghost btn-sm" href="/#apps">Ver Note Plus</a>
+    <a class="btn btn-ghost btn-sm" href="../../#apps">Ver Note Plus</a>
   </div>
 </header>
 
@@ -39,16 +39,24 @@
     <span class="doc-kind">Documento legal · Obligatorio en Google Play</span>
     <h1>Política de privacidad de Note Plus</h1>
     <div class="doc-meta">
-      <span><b>Última actualización:</b> 11 de octubre de 2026</span>
-      <span><b>Aplicación:</b> Note Plus</span>
-      <span><b>Identificador:</b> com.notesphone</span>
-      <span><b>Versión:</b> 0.1.0</span>
+      <span><b>Última actualización / Last updated:</b> 11 de octubre de 2026 / 11 October 2026</span>
+      <span><b>Aplicación / App:</b> Note Plus</span>
+      <span><b>Identificador / Package:</b> com.notesphone</span>
+      <span><b>Versión / Version:</b> 0.1.0</span>
     </div>
+    <nav class="lang-switch" aria-label="Idioma del documento / Document language">
+      <a href="#es" lang="es" aria-current="true">Español</a>
+      <a href="#en" lang="en">English</a>
+    </nav>
   </div>
 </div>
 
 <main class="doc-main" id="documento">
-  <div class="wrap doc-layout">
+
+  <p class="wrap doc-lang-title" lang="es">Versión en español</p>
+
+  <!-- ═══════════════════════ ESPAÑOL ═══════════════════════ -->
+  <div class="wrap doc-layout" id="es" lang="es">
 
     <nav class="toc" aria-label="Contenido del documento">
       <h2>Contenido</h2>
@@ -148,6 +156,17 @@
         y eliges siempre qué archivo entra en la app. La app nunca accede al resto de tu galería
         por su cuenta.
       </p>
+      <div class="callout">
+        <h3>Un permiso interno que no ves</h3>
+        <p>
+          El manifiesto de la aplicación incluye un único permiso, creado y usado por la propia
+          app: <code>com.notesphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>. Es de nivel
+          <code>signature</code> y sirve para que las librerías internas de Android no dejen
+          receptores expuestos. <strong>No se pide al usuario, no da acceso a ningún dato y no
+          aparece en la lista de permisos de la ficha de Google Play</strong>, que está vacía. Se
+          menciona aquí para que la política describa el manifiesto exactamente como es.
+        </p>
+      </div>
 
       <h2 id="donde">6. Dónde se guardan los datos</h2>
       <p>
@@ -192,7 +211,7 @@
       <p>
         La app no recoge ningún dato de nadie, así que tampoco recoge datos de menores. No tiene
         contenido dirigido específicamente a menores, ni compras, ni publicidad, ni comunicación
-        con otras personas.
+        con otras personas. <strong>No está dirigida a menores de 13 años.</strong>
       </p>
 
       <h2 id="eliminacion">10. Eliminación de datos</h2>
@@ -238,7 +257,7 @@
         Para cualquier duda sobre esta política puedes usar el canal de soporte de la aplicación:
       </p>
       <ul>
-        <li>La página de <a href="/note-plus/soporte/">soporte</a> de este sitio.</li>
+        <li>La página de <a href="../soporte/">soporte</a> de este sitio.</li>
         <li>El correo de contacto que aparece en la ficha de Note Plus en Google Play, en el apartado «Información del desarrollador».</li>
       </ul>
 
@@ -248,15 +267,15 @@
       </div>
 
       <nav class="doc-nav" aria-label="Otros documentos">
-        <a href="/note-plus/seguridad-de-datos/">
+        <a href="../seguridad-de-datos/">
           <small>Obligatorio en Play</small>
           <span>Seguridad de los datos</span>
         </a>
-        <a href="/note-plus/terminos/">
+        <a href="../terminos/">
           <small>Acuerdo</small>
           <span>Términos y condiciones</span>
         </a>
-        <a href="/note-plus/soporte/">
+        <a href="../soporte/">
           <small>Ficha de Play</small>
           <span>Soporte</span>
         </a>
@@ -264,16 +283,247 @@
 
     </article>
   </div>
+
+  <p class="wrap doc-lang-title is-separator" lang="en">English version</p>
+
+  <!-- ═══════════════════════ ENGLISH ═══════════════════════ -->
+  <div class="wrap doc-layout" id="en" lang="en">
+
+    <nav class="toc" aria-label="Document contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#en-summary">Summary</a></li>
+        <li><a href="#en-who">Who develops the app</a></li>
+        <li><a href="#en-data">What data the app uses</a></li>
+        <li><a href="#en-not-collected">What data is not collected</a></li>
+        <li><a href="#en-permissions">Android permissions</a></li>
+        <li><a href="#en-storage">Where the data is stored</a></li>
+        <li><a href="#en-backups">Backups and cloud</a></li>
+        <li><a href="#en-third-parties">Third parties and libraries</a></li>
+        <li><a href="#en-minors">Minors</a></li>
+        <li><a href="#en-deletion">Deleting your data</a></li>
+        <li><a href="#en-rights">Your rights</a></li>
+        <li><a href="#en-changes">Changes to this policy</a></li>
+        <li><a href="#en-contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <article class="doc-body prose">
+
+      <h2 id="en-summary">1. Summary</h2>
+      <p>
+        <strong>Note Plus does not collect personal data.</strong> The app has no accounts, asks
+        for no sign-up, does not connect to the internet and sends no information to any server,
+        either its own or a third party's. Everything you write and everything you add stays on
+        your phone.
+      </p>
+      <div class="callout">
+        <h3>In one sentence</h3>
+        <p>
+          What happens on your phone stays on your phone. There is nothing to collect, because the
+          app has no way to send it: it does not declare the internet permission.
+        </p>
+      </div>
+
+      <h2 id="en-who">2. Who develops the app</h2>
+      <p>
+        Note Plus is an Android application developed by <strong>Fabian Camayo</strong>, as an
+        independent software developer. He is responsible for the application and for this policy.
+      </p>
+
+      <h2 id="en-data">3. What data the app uses</h2>
+      <p>
+        The app works with the content you create. This data exists, but it is yours and it stays
+        inside the private storage of the application:
+      </p>
+      <ul>
+        <li><strong>The text of your notes.</strong> Title, up to 200 characters, and body, up to 100,000 characters.</li>
+        <li><strong>The files you add.</strong> Images, videos and audio that you pick from your gallery or record with the tools of the system.</li>
+        <li><strong>Categories and colours.</strong> The names of your categories and the colours you assign to notes and categories.</li>
+        <li><strong>Creation and modification dates</strong> of each note and each file, so that they can be sorted.</li>
+      </ul>
+      <p>
+        None of this data leaves the device. It is not sent, not synchronised and not shared,
+        because the application has no network connection.
+      </p>
+
+      <h2 id="en-not-collected">4. What data is not collected</h2>
+      <p>To be clear, the app does <strong>not</strong> collect or process any of the following:</p>
+      <ul>
+        <li>Name, email address, phone number or any identity data.</li>
+        <li>Account data, because there is no account and no sign-in.</li>
+        <li>Contacts, calendar or messages on the phone.</li>
+        <li>Location, precise or approximate.</li>
+        <li>Advertising identifiers or device identifiers for commercial purposes.</li>
+        <li>Usage data, statistics, analytics or crash reports.</li>
+        <li>Browser information or your activity on the internet.</li>
+        <li>Advertising content, because the app shows no ads.</li>
+      </ul>
+
+      <h2 id="en-permissions">5. Android permissions</h2>
+      <p>
+        <strong>Note Plus requests no Android permission.</strong> You can check this on the Google
+        Play listing, in the permissions section, or in your phone settings.
+      </p>
+      <p>In particular, the app declares none of these permissions:</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Permissions the app does not declare</caption>
+          <thead>
+            <tr><th>Permission</th><th>Why it is not needed</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>INTERNET</code></td><td>The app connects to no network. Without this permission, it is technically impossible for it to send your data.</td></tr>
+            <tr><td><code>CAMERA</code></td><td>The photo and the video are captured with the tools of the system itself, which hand over the finished file.</td></tr>
+            <tr><td><code>RECORD_AUDIO</code></td><td>Audio is recorded with the recorder of the system, not with a recorder of the app's own.</td></tr>
+            <tr><td><code>READ_MEDIA_IMAGES</code>, <code>READ_MEDIA_VIDEO</code>, <code>READ_MEDIA_AUDIO</code></td><td>The app receives only the file you pick, through the visual picker of the system. It does not browse your gallery.</td></tr>
+            <tr><td><code>MANAGE_EXTERNAL_STORAGE</code>, shared storage</td><td>The app does not touch the shared storage of the phone.</td></tr>
+            <tr><td>Location, contacts, notifications</td><td>They are not used at all.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Because the app takes photos, videos and audio with the pickers of the system, you always
+        see and choose which file enters the app. The app never reaches the rest of your gallery on
+        its own.
+      </p>
+      <div class="callout">
+        <h3>An internal permission you do not see</h3>
+        <p>
+          The manifest of the application includes one single permission, created and used by the
+          app itself: <code>com.notesphone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code>. It is a
+          <code>signature</code> permission, and it exists so that the internal Android libraries
+          do not leave receivers exposed. <strong>It is not requested from the user, it gives
+          access to no data and it does not appear in the permissions list of the Google Play
+          listing</strong>, which is empty. It is mentioned here so that this policy describes the
+          manifest exactly as it is.
+        </p>
+      </div>
+
+      <h2 id="en-storage">6. Where the data is stored</h2>
+      <p>
+        Everything is stored in the <strong>private storage of the application</strong>, the area
+        of the phone that Android reserves for each app and that no other application can read:
+      </p>
+      <ul>
+        <li>The database of notes and categories, in the app's own location.</li>
+        <li>The images, videos, audio and their thumbnails, in the <code>media</code> folder of the app.</li>
+      </ul>
+      <p>This has three practical consequences:</p>
+      <ul>
+        <li>Those copies <strong>do not appear in your gallery</strong> or in other applications.</li>
+        <li>They are removed completely <strong>when you uninstall the app</strong>.</li>
+        <li><strong>Your original file is not touched.</strong> When you add a photo, the app keeps its own copy. If you later delete the note, your gallery photo stays where it was.</li>
+      </ul>
+
+      <h2 id="en-backups">7. Backups and cloud</h2>
+      <p>
+        The application has <strong>cloud backup disabled</strong>, both the automatic Android
+        backup and the extraction of data to Google services. There is no synchronisation with
+        Google Drive, with any cloud or with any server. Your notes do not leave the phone through
+        any mechanism of the app.
+      </p>
+
+      <h2 id="en-third-parties">8. Third parties and libraries</h2>
+      <p>
+        The app <strong>includes no advertising, no analytics, no social networks and no tracking
+        tools</strong>. There is no third-party service that receives your data.
+      </p>
+      <p>
+        To work, it uses open-source libraries, which run inside the phone and collect no
+        information:
+      </p>
+      <ul>
+        <li><strong>AndroidX and Material Components</strong>, the set of Android interface components.</li>
+        <li><strong>Room</strong>, the local database where the notes are stored.</li>
+        <li><strong>Glide</strong>, used only to show on screen the images already stored on the phone.</li>
+      </ul>
+
+      <h2 id="en-minors">9. Minors</h2>
+      <p>
+        The app collects no data from anyone, so it collects no data from minors either. It has no
+        content aimed specifically at minors, no purchases, no advertising and no communication
+        with other people. <strong>It is not directed at children under 13 years of age.</strong>
+      </p>
+
+      <h2 id="en-deletion">10. Deleting your data</h2>
+      <p>
+        Since there are no accounts and no servers, there is no data of yours held outside the
+        phone that you would need to ask to be deleted. You control deletion entirely from the app
+        itself:
+      </p>
+      <ul>
+        <li><strong>Deleting a note:</strong> removes the text, its associated files and its thumbnails. No copy remains.</li>
+        <li><strong>Deleting a file:</strong> you can remove the image, the video or the audio from a note without deleting the note.</li>
+        <li><strong>Deleting the app's data:</strong> from Android settings, in the application section, you can clear its whole storage.</li>
+        <li><strong>Deleting everything:</strong> uninstalling Note Plus removes the complete private storage of the app.</li>
+      </ul>
+      <div class="callout">
+        <h3>A backup, on your side</h3>
+        <p>
+          Precisely because nothing leaves the phone, there is <strong>also no cloud copy</strong>
+          that could restore your notes if you delete the app, lose the phone or reset it to
+          factory settings. Keep that in mind if you store notes you do not want to lose.
+        </p>
+      </div>
+
+      <h2 id="en-rights">11. Your rights</h2>
+      <p>
+        Data protection rules recognise rights such as access, rectification, erasure, portability
+        or objection to processing. In this case <strong>there is nothing to exercise before the
+        developer</strong>, because there is no processing of personal data on his side: no
+        collection, no storage and no communication to third parties.
+      </p>
+
+      <h2 id="en-changes">12. Changes to this policy</h2>
+      <p>
+        If in the future the app adds a feature that changes this (for example, optional
+        synchronisation), this policy will be updated before that version is published and the date
+        at the top of the document will be changed. We recommend reviewing it from time to time.
+      </p>
+
+      <h2 id="en-contact">13. Contact</h2>
+      <p>
+        For any question about this policy you can use the support channel of the application:
+      </p>
+      <ul>
+        <li>The <a href="../soporte/">support</a> page of this site.</li>
+        <li>The contact email shown on the Note Plus listing on Google Play, in the «Developer information» section.</li>
+      </ul>
+
+      <div class="doc-foot">
+        <span>This document has been in force since 11 October 2026.</span>
+        <span>Note Plus · com.notesphone · version 0.1.0</span>
+      </div>
+
+      <nav class="doc-nav" aria-label="Other documents">
+        <a href="../seguridad-de-datos/">
+          <small>Required by Play</small>
+          <span>Data safety</span>
+        </a>
+        <a href="../terminos/">
+          <small>Agreement</small>
+          <span>Terms and conditions</span>
+        </a>
+        <a href="../soporte/">
+          <small>Play listing</small>
+          <span>Support</span>
+        </a>
+      </nav>
+
+    </article>
+  </div>
+
 </main>
 
 <footer class="footer">
   <div class="wrap footer-inner">
     <p>© 2026 Fabian Camayo · Desarrollador independiente</p>
     <ul class="footer-links">
-      <li><a href="/note-plus/privacidad/">Privacidad</a></li>
-      <li><a href="/note-plus/terminos/">Términos</a></li>
-      <li><a href="/note-plus/seguridad-de-datos/">Seguridad de los datos</a></li>
-      <li><a href="/note-plus/soporte/">Soporte</a></li>
+      <li><a href="../privacidad/">Privacidad</a></li>
+      <li><a href="../terminos/">Términos</a></li>
+      <li><a href="../seguridad-de-datos/">Seguridad de los datos</a></li>
+      <li><a href="../soporte/">Soporte</a></li>
     </ul>
   </div>
 </footer>

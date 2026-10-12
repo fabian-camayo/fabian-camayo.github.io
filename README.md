@@ -10,7 +10,7 @@ Es el repositorio especial de usuario de GitHub Pages: al llamarse
 | Archivo | Para qué sirve |
 | --- | --- |
 | `index.html` | Página única con las secciones: perfil, habilidades, experiencia, formación, apps y contacto. |
-| `note-plus/privacidad/index.html` | Política de privacidad de Note Plus. Dirección obligatoria para Google Play. |
+| `note-plus/privacidad/index.html` | Política de privacidad de Note Plus, en español y en inglés. Dirección obligatoria para Google Play. |
 | `note-plus/seguridad-de-datos/index.html` | Seguridad de los datos: las respuestas del formulario de Play, explicadas. |
 | `note-plus/terminos/index.html` | Términos y condiciones de uso de Note Plus. |
 | `note-plus/soporte/index.html` | Soporte: cómo reportar un problema y preguntas frecuentes. |
@@ -37,6 +37,14 @@ inicio de sesión. Estas son las direcciones para la ficha del Play Console:
 Estos documentos **no tienen una sección propia en la página de inicio**: se llega a ellos por
 su dirección directa, y desde el botón «Documentos legales» del panel de Note Plus, en el
 apartado de apps.
+
+La política de privacidad es **el único documento bilingüe**, porque Google Play la exige en
+inglés y en español: lleva el bloque en español y, debajo, el bloque en inglés, cada uno con su
+`lang` y su índice. El idioma se elige con el conmutador `.lang-switch` de la cabecera, que son
+dos anclas (`#es` y `#en`) y no necesita JavaScript. Los identificadores de las secciones en
+inglés van con el prefijo `en-` para no repetir los del español. Para añadir otro documento
+bilingüe basta con copiar esa estructura: `.lang-switch`, `.doc-lang-title` y los dos bloques
+`.doc-layout`.
 
 La eliminación de datos no necesita una dirección propia: Play solo la pide cuando la app
 permite crear una cuenta, y Note Plus no tiene cuentas. Está explicada dentro de la política
@@ -65,15 +73,38 @@ Para cambiar el formulario, basta con editar el de Tally: el sitio solo apunta a
 (`vG7EXA`). Si algún día el formulario tiene otro ID, hay que actualizar las dos apariciones en
 `index.html` (el `data-tally-src` y el enlace de respaldo).
 
+## Rutas de los recursos
+
+Salvo en `404.html`, **todas las páginas usan rutas relativas** (`assets/css/styles.css` en la
+portada y `../../assets/css/styles.css` en los documentos legales). Así el sitio funciona igual
+en tres escenarios distintos, sin depender de dónde se publique:
+
+- En la raíz del dominio, como sitio de usuario de GitHub Pages: `https://fabian-camayo.github.io/`.
+- Bajo un subdirectorio, si algún día se sirviera como sitio de proyecto (`/nombre-del-repo/`).
+- Abriendo los archivos directamente desde el disco, sin servidor.
+
+`404.html` es **la única excepción, y a propósito**: usa rutas absolutas (`/assets/...`). GitHub
+Pages la sirve para cualquier dirección que no exista, y la URL no cambia, así que una ruta
+relativa se resolvería contra el directorio equivocado. Por ejemplo, al pedir
+`/no/existe/pagina` el navegador buscaría `/no/existe/assets/...`. Con rutas absolutas siempre
+apunta a la raíz. No la cambies a rutas relativas.
+
+Las direcciones canónicas (`rel="canonical"`) y `sitemap.xml` también son absolutas, porque por
+definición deben serlo.
+
 ## Ver en local
 
-Como las páginas internas usan rutas absolutas (`/assets/...`), conviene servirlo en lugar de
-abrir los archivos directamente:
+Se puede abrir `index.html` directamente con el navegador: las rutas relativas funcionan sin
+servidor. Aun así, para reproducir lo más parecido a GitHub Pages conviene servirlo:
 
 ```bash
 python3 -m http.server 8000
 # luego abre http://localhost:8000
 ```
+
+La página de error solo se comporta como en producción si se sirve (por lo de las rutas
+absolutas), y para comprobar el sitio como si estuviera bajo un subdirectorio se puede servir
+la carpeta padre y abrir `http://localhost:8000/fabian-camayo.github.io/`.
 
 ## Publicar en GitHub Pages
 

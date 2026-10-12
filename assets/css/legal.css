@@ -39,6 +39,43 @@
 }
 .doc-meta b { color: var(--muted); font-weight: 400; }
 
+/* Selector de idioma: para documentos bilingües en la misma página. */
+.lang-switch {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 24px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  background: var(--surface);
+}
+.lang-switch a {
+  padding: 7px 18px;
+  border-radius: 100px;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  transition: color 0.2s, background 0.2s;
+}
+.lang-switch a:hover { color: var(--text); background: var(--surface-strong); }
+.lang-switch a[aria-current="true"] { color: var(--text); background: var(--surface-strong); }
+
+/* Marca de idioma que separa los dos bloques del mismo documento. */
+.doc-lang-title {
+  margin: 0 0 28px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--violet);
+}
+.doc-lang-title.is-separator {
+  margin-top: 66px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
 /* ── Cuerpo ─────────────────────────────────────────────────────────────── */
 .doc-main { padding: 46px 0 20px; }
 
@@ -136,6 +173,8 @@
   font-family: var(--mono);
   font-size: 0.84em;
   color: var(--text);
+  /* Un identificador largo (permiso, ruta) no debe ensanchar la página en móvil. */
+  overflow-wrap: anywhere;
 }
 
 /* Destacado */
